@@ -123,6 +123,9 @@ $(document).ready(function () {
 
   $(".img-3").children("svg").find(".a").css("stroke", "#5f5f5f");
   $(".img-3").children("svg").find(".b").css("fill", "#5f5f5f");
+  $(".navbar-brand").children("svg").find(".a").css("fill", "#fff");
+  $(".navbar-brand").children("svg").find(".a").css("stroke", "none");
+  $(".navbar-brand").children("svg").find(".b").css("fill", "#fff");
 });
 
 // Active / Deactive arrows btns
