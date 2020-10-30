@@ -521,6 +521,10 @@ body {
   .Partners .partnres-img img {
     width: 100%;
   }
+  
+  .Partners .partnres-img {
+    max-width: 50%;
+  }
 
   .about img {
     width: 60%;
@@ -614,55 +618,6 @@ body {
   }
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
-  .Partners {
-    height: 100%;
-  }
-
-  .about {
-    height: 100%;
-    margin-bottom: 5rem;
-  }
-
-  .why {
-    height: 100%;
-  }
-
-  .why .porta img {
-    text-align: center;
-  }
-
-  .why .porta {
-    max-width: 39%;
-    margin-left: 3rem;
-  }
-
-  .Partners .partnres-img img {
-    width: 100%;
-  }
-
-  .pricing .porta {
-    max-width: 39%;
-    margin-left: 3rem;
-  }
-
-  .pricing .center {
-    margin-left: 3rem;
-  }
-
-  .Testimonials {
-    height: 100%;
-  }
-
-  .Contact {
-    height: 100vh;
-  }
-
-  .Contact h1 {
-    margin-bottom: 0;
-  }
-}
-
 @media (min-width: 321px) and (max-width: 375px) {
   .Contact form textarea {
     height: 4rem;
@@ -700,6 +655,10 @@ body {
 
   .Partners .partnres-img img {
     width: 100%;
+  }
+
+  .Partners .partnres-img {
+    max-width: 50%;
   }
 
   .about img {
