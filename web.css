@@ -7,6 +7,10 @@ body {
   width: 100%;
 }
 
+a {
+    outline: none;
+}
+
 /* start nav */
 
 .navbar .nav-item .nav-link {
