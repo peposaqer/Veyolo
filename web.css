@@ -103,6 +103,7 @@ a {
   color: #ff7600;
   font-weight: 900;
   margin-top: 0;
+  line-height: 0.7;
 }
 
 .about p {
@@ -129,6 +130,7 @@ a {
   font-weight: 900;
   margin-bottom: 0px;
   margin-top: 0px;
+  line-height: 0.7;
 }
 
 .why h3 {
@@ -136,6 +138,7 @@ a {
   font-size: 54px;
   margin-top: 0px;
   font-weight: 900;
+  line-height: 0.9;
 }
 
 .why p {
@@ -186,6 +189,7 @@ a {
   font-size: 44px;
   margin-bottom: 3%;
   margin-top: 0;
+  line-height: 0.7;
 }
 
 .pricing .porta {
@@ -251,6 +255,7 @@ a {
   color: #ff7600;
   margin-top: 0;
   margin-bottom: 2rem;
+  line-height: 0.7;
 }
 
 .album p {
@@ -327,6 +332,7 @@ a {
   color: #ff7600;
   margin-top: 0;
   margin-bottom: 2rem;
+  line-height: 0.7;
 }
 
 .Testimonials p {
@@ -401,6 +407,7 @@ a {
   color: #ff7600;
   margin-top: 0;
   margin-bottom: 2rem;
+  line-height: 0.7;
 }
 
 .Partners p {
