@@ -172,4 +172,8 @@ $("a").on('click', function(){
     $(".img-3").children("svg").find(".a").css("stroke", "#ff7600");
     $(".img-3").children("svg").find(".b").css("fill", "#ff7600");
   }
-})
+});
+
+$(".navbar-nav>li>a").on("click", function () {
+  $(".navbar-collapse").collapse("hide");
+});
