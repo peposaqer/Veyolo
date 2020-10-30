@@ -1,0 +1,872 @@
+body {
+  background-color: #000;
+  font-family: "Poppins", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* start nav */
+
+.navbar {
+  /* padding-left: 2%;
+  padding-right: 2%; */
+}
+
+.navbar .nav-item .nav-link {
+  color: #fff;
+  font-size: 16px;
+}
+
+.navbar .nav-item {
+  /* margin-left: 1%; */
+  white-space: nowrap;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: #ff7600 !important;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .active > .nav-link {
+  color: #ff7600 !important;
+  font-weight: bold;
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+/* end nav */
+
+/* start header */
+
+.header {
+  background: url(/img/car-bg@2x.png) no-repeat center center/cover;
+  height: 90vh;
+}
+
+.header span {
+  text-align: center;
+  color: #ff7600;
+  font-size: 44px;
+  font-weight: bold;
+  /* margin-top: 7%; */
+  /* padding-right: 11%; */
+  /* margin-left: 5%; */
+}
+
+.header h2 {
+  text-align: center;
+  font-size: 44px;
+  /* padding-right: 11%; */
+}
+
+.head {
+  display: flex;
+  flex-flow: column;
+  padding-top: 4rem;
+}
+
+/* end header */
+
+/* start about */
+
+.about {
+  height: 100vh;
+  padding-top: 10%;
+}
+
+/* .about .one {
+    width: 6px;
+    height: 302px;
+    color: #FFF;
+} */
+
+.about h1 {
+  font-size: 34px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.about .h1 {
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #ff7600;
+  font-weight: 900;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* end about */
+
+/* start why */
+
+.why {
+  height: 100vh;
+}
+
+.why h1 {
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.why h2 {
+  font-size: 44px;
+  font-weight: 900;
+}
+
+.why h3 {
+  color: #ff7600;
+  font-size: 54px;
+  font-weight: 900;
+}
+
+.why p {
+  width: 40%;
+  font-size: 16px;
+  font-family: "Poppins";
+}
+
+.why .porta {
+  background-color: #121212;
+  border-radius: 5px;
+  max-width: 23%;
+  margin-left: 2%;
+  margin-bottom: 4%;
+}
+
+.why .porta p {
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  color: #e2e0e0;
+  line-height: 1.2;
+}
+
+.why .porta h5 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.why .porta img {
+  text-align: center;
+}
+
+/* end why */
+
+/* start pricing */
+
+.pricing h1 {
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.pricing h2 {
+  font-weight: 900;
+  color: #ff7600;
+  font-size: 44px;
+  margin-bottom: 6%;
+}
+
+.pricing .porta {
+  background-color: #121212;
+  border-radius: 5px;
+  max-width: 23%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+}
+
+.pricing .porta h5 {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 5%;
+  margin-top: 10%;
+}
+
+.pricing .porta span {
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+  margin-left: 20%;
+  margin-bottom: 10%;
+}
+
+.pricing .icon {
+  display: flex;
+}
+
+.pricing .icon img {
+  margin-right: 2%;
+  padding-bottom: 7%;
+}
+
+.pricing .icon p {
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 7%;
+  white-space: nowrap;
+}
+
+/* end pricing */
+
+/* start album */
+
+.album {
+  height: 100vh;
+}
+
+.album .porta {
+  margin-top: 2rem;
+}
+
+.album h1 {
+  font-size: 34px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.album h2 {
+  font-size: 44px;
+  font-weight: bold;
+  color: #ff7600;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.album p {
+  font-size: 16px;
+  width: 40%;
+  font-family: "Poppins";
+}
+
+.album .button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.album .button .img-1 {
+  margin-right: 1rem;
+}
+
+.album .button img {
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 39%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* end album */
+
+/* start Testimonials */
+
+.Testimonials {
+  height: 100vh;
+}
+
+.Testimonials .porta {
+  margin-top: 2rem;
+}
+
+.Testimonials h1 {
+  font-size: 34px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.Testimonials h2 {
+  font-size: 44px;
+  font-weight: bold;
+  color: #ff7600;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.Testimonials p {
+  font-size: 16px;
+  width: 40%;
+  font-family: "Poppins";
+}
+
+.Testimonials .buttom {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.Testimonials .buttom .img-3 {
+  margin-right: 1rem;
+}
+
+.Testimonials .icon p {
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 2rem;
+}
+
+.Testimonials .icon h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.Testimonials .swiper-slide {
+  color: #fff;
+  background-color: #171717;
+  border-radius: 10px;
+}
+
+.Testimonials .icon .icon-1 {
+  width: 27px;
+  height: 21px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.Testimonials .icon .icon-2 {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 2rem;
+}
+
+/* end Testimonials */
+
+/* start Partners */
+
+.Partners {
+  height: 100vh;
+}
+
+.Partners .porta {
+  margin-top: 2rem;
+}
+
+.Partners h1 {
+  font-size: 34px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.Partners h2 {
+  font-size: 44px;
+  font-weight: bold;
+  color: #ff7600;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.Partners p {
+  font-size: 16px;
+  width: 40%;
+  font-family: "Poppins";
+}
+
+/* end Partners */
+
+/* start Contact */
+
+.Contact {
+  height: 90vh;
+  background-color: #121212;
+}
+
+.Contact .container {
+  height: 90vh;
+}
+
+.Contact .p-1 {
+  font-size: 16px;
+  text-align: center;
+  /* margin-bottom: 2rem; */
+}
+
+.Contact h1 {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 3.4rem;
+}
+
+.Contact h3 {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.Contact .porta {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Contact ul {
+  text-align: center;
+  list-style: none;
+  margin-right: 3%;
+}
+
+.Contact ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5%;
+}
+
+.Contact form {
+  text-align: -webkit-center;
+  display: grid;
+  color: #fff;
+}
+
+.Contact form input {
+  background-color: transparent;
+  border: 1px solid #4b4a4a;
+  color: #fff;
+  border-radius: 25px;
+  padding: 1%;
+  width: 60%;
+  margin-bottom: 1rem;
+}
+
+.Contact form textarea {
+  background-color: transparent;
+  border: 1px solid #4b4a4a;
+  color: #fff;
+  border-radius: 25px;
+  padding: 1%;
+  width: 60%;
+  margin-bottom: 1rem;
+}
+
+.Contact .send {
+  color: #fff;
+  font-size: 16px;
+  padding: 1%;
+  background-color: #ff7600;
+  width: 20%;
+}
+
+.Contact .copy {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* end Contact */
+
+/* start madia */
+
+@media only screen and (max-width: 320px) {
+  .header {
+    background-size: contain;
+  }
+
+  .header h2 {
+    font-size: 35px;
+  }
+
+  .about {
+    height: 100%;
+  }
+
+  .about .aboutImg {
+    text-align: center;
+  }
+
+  .Testimonials {
+    height: 100%;
+  }
+
+  .Partners {
+    height: 100%;
+  }
+
+  .why {
+    height: 100%;
+  }
+
+  .Partners .partnres-img img {
+    width: 100%;
+  }
+
+  .about img {
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+
+  .about h1 {
+    font-size: 24px;
+  }
+
+  .about .h1 {
+    font-size: 29px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .why h1 {
+    font-size: 24px;
+  }
+
+  .why h3 {
+    font-size: 39px;
+  }
+
+  .why h2 {
+    font-size: 28px;
+  }
+
+  .why p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .why .porta {
+    max-width: 80%;
+    /* height: 300px; */
+    margin-left: 10%;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .pricing .porta {
+    max-width: 80%;
+    /* height: 300px; */
+    margin-left: 10%;
+    /* text-align: center; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .Testimonials h2 {
+      font-size: 35px;
+  }
+
+  .Testimonials p {
+      width: 90%;
+  }
+
+  .Partners p {
+      width: 90%;
+  }
+
+  .album p {
+      width: 80%;
+  }
+
+  .Contact {
+    height: 100vh;
+  }
+
+  .Contact .container {
+    height: 100vh;
+  }
+
+  .Contact form input {
+    padding: 2%;
+    width: 90%;
+  }
+
+  .Contact form textarea {
+    padding: 2%;
+    width: 90%;
+    height: 4rem;
+  }
+
+  .Contact .send {
+    width: 90%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .Partners {
+    height: 100%;
+  }
+
+  .about {
+    height: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .why {
+    height: 100%;
+  }
+
+  .why .porta img {
+    text-align: center;
+  }
+
+  .why .porta {
+    max-width: 39%;
+    margin-left: 3rem;
+  }
+
+  .Partners .partnres-img img {
+    width: 100%;
+  }
+
+  .pricing .porta {
+    max-width: 39%;
+    margin-left: 3rem;
+  }
+
+  .pricing .center {
+    margin-left: 3rem;
+  }
+
+  .Testimonials {
+    height: 100%;
+  }
+
+  .Contact {
+    height: 100vh;
+  }
+
+  .Contact h1 {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .Contact form textarea {
+    height: 4rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 425px) {
+  .header {
+    background-size: contain;
+  }
+
+  .header h2 {
+    font-size: 42px;
+  }
+
+  .about {
+    height: 100%;
+  }
+
+  .about .aboutImg {
+    text-align: center;
+  }
+
+  .Testimonials {
+    height: 100%;
+  }
+
+  .Partners {
+    height: 100%;
+  }
+
+  .why {
+    height: 100%;
+  }
+
+  .Partners .partnres-img img {
+    width: 100%;
+  }
+
+  .about img {
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+
+  .about h1 {
+    font-size: 24px;
+  }
+
+  .about .h1 {
+    font-size: 29px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .why h1 {
+    font-size: 24px;
+  }
+
+  .why h3 {
+    font-size: 39px;
+  }
+
+  .why h2 {
+    font-size: 28px;
+  }
+
+  .why p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .why .porta {
+    max-width: 80%;
+    /* height: 300px; */
+    margin-left: 10%;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .pricing .porta {
+    max-width: 80%;
+    /* height: 300px; */
+    margin-left: 10%;
+    /* text-align: center; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .Contact {
+    height: 100vh;
+  }
+
+  .Contact .container {
+    height: 100vh;
+  }
+
+  .Contact form input {
+    padding: 2%;
+    width: 90%;
+  }
+
+  .Contact form textarea {
+    padding: 2%;
+    width: 90%;
+  }
+
+  .Contact .send {
+    width: 90%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .Partners {
+    height: 100%;
+  }
+
+  .about {
+    height: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .why {
+    height: 100%;
+  }
+
+  .why .porta img {
+    text-align: center;
+  }
+
+  .why .porta {
+    max-width: 39%;
+    margin-left: 3rem;
+  }
+
+  .Partners .partnres-img img {
+    width: 100%;
+  }
+
+  .pricing .porta {
+    max-width: 39%;
+    margin-left: 3rem;
+  }
+
+  .pricing .center {
+    margin-left: 3rem;
+  }
+
+  .Testimonials {
+    height: 100%;
+  }
+
+  .Contact {
+    height: 100vh;
+  }
+
+  .Contact h1 {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about p {
+    font-size: 14px;
+  }
+  .why {
+    height: 100%;
+  }
+  .pricing .porta .icon p {
+    font-size: 12.5px;
+  }
+
+  .Testimonials {
+    height: 100%;
+  }
+
+  .Partners {
+    height: 100%;
+    padding-bottom: 5rem;
+  }
+
+  .Partners .partnres-img img {
+    width: 100%;
+  }
+
+  .Contact h1 {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  .Contact .p-1 {
+    font-size: 14px;
+  }
+
+  .Contact ul {
+    height: 4%;
+  }
+
+  .Contact .copy {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+}
+/* end madia */
