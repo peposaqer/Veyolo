@@ -69,3 +69,61 @@ var swiper = new Swiper(".swiper-2", {
   //   clickable: true,
   // },
 });
+
+// Cache selectors
+var topMenu = $("#top-menu"),
+  topMenuHeight = topMenu.outerHeight() + 15,
+  // All list items
+  menuItems = topMenu.find("a"),
+  // Anchors corresponding to menu items
+  scrollItems = menuItems.map(function () {
+    var item = $($(this).attr("href"));
+    if (item.length) {
+      return item;
+    }
+  });
+
+// Bind to scroll
+$(window).scroll(function () {
+  // Get container scroll position
+  var fromTop = $(this).scrollTop() + topMenuHeight;
+
+  // Get id of current scroll item
+  var cur = scrollItems.map(function () {
+    if ($(this).offset().top < fromTop) return this;
+  });
+  // Get the id of the current element
+  cur = cur[cur.length - 1];
+  var id = cur && cur.length ? cur[0].id : "";
+  // Set/remove active class
+  menuItems
+    .parent()
+    .removeClass("active")
+    .end()
+    .filter("[href='#" + id + "']")
+    .parent()
+    .addClass("active");
+});
+
+// hover on partners img
+$(document).ready(function () {
+  $(".partnres-img").hover(
+    function () {
+      $(this).css("box-shadow", "0px 5px 5px 5px #e9ecef");
+      $(this).css("padding", '10');
+    },
+    function () {
+      $(this).css("box-shadow", "0px 0px 0px #888");
+      $(this).css("padding", "0");
+    }
+  );
+});
+
+// Active / Deactive arrows btns
+$(document).ready(function(){
+  if ($('a').hasClass("swiper-button-disabled")) {
+    console.log(this)
+  } else {
+
+  }
+})

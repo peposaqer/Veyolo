@@ -484,6 +484,11 @@ a {
   text-align: center;
 }
 
+.partnres-img {
+  display: flex;
+  justify-content: center;
+}
+
 /* end Contact */
 
 /* start madia */
