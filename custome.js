@@ -110,20 +110,63 @@ $(document).ready(function () {
   $(".partnres-img").hover(
     function () {
       $(this).css("box-shadow", "0px 5px 5px 5px #e9ecef");
-      $(this).css("padding", '10');
+      $(this).css("padding", "10");
     },
     function () {
       $(this).css("box-shadow", "0px 0px 0px #888");
       $(this).css("padding", "0");
     }
   );
+
+  $(".img-1").children("svg").find(".a").css("stroke", "#5f5f5f");
+  $(".img-1").children("svg").find(".b").css("fill", "#5f5f5f");
+
+  $(".img-3").children("svg").find(".a").css("stroke", "#5f5f5f");
+  $(".img-3").children("svg").find(".b").css("fill", "#5f5f5f");
 });
 
 // Active / Deactive arrows btns
-$(document).ready(function(){
-  if ($('a').hasClass("swiper-button-disabled")) {
-    console.log(this)
+$("a").on("click", function () {
+  if ($(".img-1").hasClass("swiper-button-disabled") && !$(".img-2").hasClass("swiper-button-disabled")) {
+    $(".img-1").children("svg").find(".a").css("stroke", "#5f5f5f");
+    $(".img-1").children("svg").find(".b").css("fill", "#5f5f5f");
+    $(".img-2").children("svg").find(".a").css("stroke", "#ff7600");
+    $(".img-2").children("svg").find(".b").css("fill", "#ff7600");
+  }
+  else if(!$(".img-1").hasClass("swiper-button-disabled") && $(".img-2").hasClass("swiper-button-disabled")){
+    $(".img-2").children("svg").find(".a").css("stroke", "#5f5f5f");
+    $(".img-2").children("svg").find(".b").css("fill", "#5f5f5f");
+    $(".img-1").children("svg").find(".a").css("stroke", "#ff7600");
+    $(".img-1").children("svg").find(".b").css("fill", "#ff7600");
   } else {
+    $(".img-2").children("svg").find(".a").css("stroke", "#ff7600");
+    $(".img-2").children("svg").find(".b").css("fill", "#ff7600");
+    $(".img-1").children("svg").find(".a").css("stroke", "#ff7600");
+    $(".img-1").children("svg").find(".b").css("fill", "#ff7600");
+  }
+});
 
+$("a").on('click', function(){
+  if (
+    $(".img-3").hasClass("swiper-button-disabled") &&
+    !$(".img-4").hasClass("swiper-button-disabled")
+  ) {
+    $(".img-3").children("svg").find(".a").css("stroke", "#5f5f5f");
+    $(".img-3").children("svg").find(".b").css("fill", "#5f5f5f");
+    $(".img-4").children("svg").find(".a").css("stroke", "#ff7600");
+    $(".img-4").children("svg").find(".b").css("fill", "#ff7600");
+  } else if (
+    !$(".img-3").hasClass("swiper-button-disabled") &&
+    $(".img-4").hasClass("swiper-button-disabled")
+  ) {
+    $(".img-4").children("svg").find(".a").css("stroke", "#5f5f5f");
+    $(".img-4").children("svg").find(".b").css("fill", "#5f5f5f");
+    $(".img-3").children("svg").find(".a").css("stroke", "#ff7600");
+    $(".img-3").children("svg").find(".b").css("fill", "#ff7600");
+  } else {
+    $(".img-4").children("svg").find(".a").css("stroke", "#ff7600");
+    $(".img-4").children("svg").find(".b").css("fill", "#ff7600");
+    $(".img-3").children("svg").find(".a").css("stroke", "#ff7600");
+    $(".img-3").children("svg").find(".b").css("fill", "#ff7600");
   }
 })
