@@ -47,7 +47,7 @@ var swiper = new Swiper(".swiper-2", {
   breakpoints: {
     // when window width is >= 320px
     1: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20,
     },
     // when window width is >= 480px
@@ -109,7 +109,7 @@ $(window).scroll(function () {
 $(document).ready(function () {
   $(".partnres-img").hover(
     function () {
-      $(this).css("box-shadow", "0px 5px 5px 5px #e9ecef");
+      $(this).css("box-shadow", "0px 3px 1px 1px #ff7600");
       $(this).css("padding", "10");
     },
     function () {
