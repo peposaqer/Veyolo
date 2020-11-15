@@ -67,7 +67,7 @@ a {
 /* start header */
 
 .header {
-  background: url(../img/car-bg@2x.png) no-repeat center center/cover;
+  background: url(img/car-bg@2x.png) no-repeat center center/cover;
   height: 90vh;
 }
 
