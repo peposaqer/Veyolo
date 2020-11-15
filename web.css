@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #000;
   font-family: "Poppins", sans-serif;
@@ -286,6 +290,252 @@ a {
 }
 
 /* end pricing */
+
+/* start Register model */
+
+input[type="file"] {
+	opacity: 0;
+	position: absolute;
+	z-index: 99;
+	cursor:pointer;
+  height: 67px;
+}
+.custom-file-upload {
+	position:relative;
+  cursor: pointer;
+	background: #121212 center center no-repeat;
+	width: 100%;
+  height: 60px;
+}
+
+.reg-model {
+  background-color: #000;
+  opacity: 1;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+.links {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.links a {
+  color: #5C5C5C;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 24px;
+}
+
+.links a:hover {
+  background-color: #1D1D1D;
+  border: 1px solid #1D1D1D;
+  color: #FFF;
+}
+
+.veyolo-img {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.veyolo-img img {
+  padding-right: 1rem;
+}
+
+.veyolo-img h1 {
+  font-size: 39px;
+  font-weight: bold;
+}
+
+form input {
+  color: #838383;
+  border: 1px solid #5C5C5C;
+  border-radius: 24px;
+  background-color: transparent;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+button.close {
+  outline: none;
+}
+
+form .custom-select {
+  color: #838383;
+  border: 1px solid #5C5C5C;
+  border-radius: 24px;
+  background-color: transparent;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  height: auto;
+  outline: none;
+  font-size: 14px;
+}
+
+.hide2 {
+  display: none;
+}
+
+
+.hide3 {
+  display: none;
+}
+
+form h5 {
+  font-size: 14px;
+  color: #CECECE;
+  margin-top: 1rem;
+}
+
+form .add1 {
+  color: #ff7600;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+form .add2 {
+  color: #ff7600;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+h4 {
+  color: #CECECE;
+  font-size: 14px;
+  margin-top: 2rem;
+}
+
+.file {
+  margin-top: 1rem;
+}
+
+
+.file h5 {
+  font-size: 12px;
+}
+
+.radio span {
+  font-size: 16px;
+}
+
+.radio {
+  margin-top: 1rem;
+}
+
+.radio input {
+  background-color: transparent;
+}
+
+.active1 {
+  background-color: #1d1d1d;
+  color: #FFF !important;
+}
+
+.active2 {
+  background-color: #ff7600;
+  color: #FFF !important;
+}
+
+.custom-file-upload {
+  width: 100%;
+  background-color: #121212;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1.2rem 0 .5rem 0rem;
+}
+
+.custom-file-upload img {
+  width: 18px;
+  height: 18px;
+}
+
+.pad {
+  padding: 0.5rem;
+}
+
+.custom-file-upload p {
+  font-size: 14px;
+  padding-left: 1rem;
+  color: #C7C9D5;
+}
+
+.links2 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.plus {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.plus:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.links2 a {
+  color: #ff7600;
+  font-size: 14px;
+  text-decoration: none;
+  padding: .6rem;
+  text-align: center;
+  border-radius: 24px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.copy {
+  margin-top: 2rem;
+}
+
+.power {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 0rem;
+  padding: 0;
+  margin: 0;
+  line-height: 1.8;
+}
+
+.thank {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 90vh;
+}
+
+.thank span {
+  width: 50%;
+  align-self: center;
+  text-align: center;
+}
+
+.thank p {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0;
+  margin-bottom: 2rem;
+}
+
+.thank h1 {
+  text-align: center;
+  font-size: 44px;
+  font-weight: bold;
+}
+
+/* end Register model */
 
 /* start album */
 

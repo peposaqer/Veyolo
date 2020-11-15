@@ -177,3 +177,38 @@ $("a").on('click', function(){
 $(".navbar-nav>li>a").on("click", function () {
   $(".navbar-collapse").collapse("hide");
 });
+
+
+// $(".Register").on("click", function () {
+//   console.log("sdlgnlsfgnlds");
+//   $(".reg-model").show();
+//   // $("html, body").css({ overflow: "hidden" });
+//   // $("body").css({ "background-color": "rgba(0,0,0,0.5)" });
+// });
+
+
+
+$(document).ready(function () {
+  $(".Register").on("click", function () {
+  });
+});
+
+
+$(document).ready(function () {
+  $(".radio").on("click", function () {
+    $(".hide1").hide();
+  });
+});
+
+
+$(document).ready(function () {
+  $(".show").on("click", function () {
+    $(".hide1").show();
+  });
+});
+
+  $(".block2").click(function () {
+    $("form").append(
+      '<div class="col-md-2 pad"><select class="custom-select" id="validationCustom04" ><option selected disabled value="+02">+02</option><option>+22</option><option>+65</option><option>+79</option></select></div><div class="col-md-4 pad"><input type="phone" placeholder="Phone Number"></div>'
+    );
+  });
