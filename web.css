@@ -1008,6 +1008,35 @@ h4 {
   .Contact .send {
     width: 90%;
   }
+  
+  .links2 a {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 12px;
+  }
+
+  .links a {
+    font-size: 7px;
+  }
+
+  .file p {
+    font-size: 9px;
+  }
+
+  .file img {
+    width: 13px;
+    height: 13px;
+    margin-left: 6px;
+  } 
+
+  .thank span {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .back {
+    width: 60%;
+  }
 }
 
 @media (min-width: 321px) and (max-width: 375px) {
@@ -1033,6 +1062,18 @@ h4 {
   .Partners p {
     width: 100%;
   }
+
+
+  .links a {
+    font-size: 8px !important;
+  }
+
+  .file img {
+    margin-left: 5px !important;
+  } 
+
+
+
 }
 
 @media (min-width: 321px) and (max-width: 425px) {
@@ -1169,6 +1210,35 @@ h4 {
   .Contact ul {
     padding: 0;
     margin: 0;
+  }
+  
+  .links2 a {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 12px;
+  }
+
+  .links a {
+    font-size: 9px;
+  }
+
+  .file p {
+    font-size: 9px;
+  }
+
+  .file img {
+    width: 13px;
+    height: 13px;
+    margin-left: 10px;
+  } 
+
+  .thank span {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .back {
+    width: 60%;
   }
 }
 
