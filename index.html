@@ -558,209 +558,201 @@
                         <!-- <button type="button" class="close closeModalBtn" data-dismiss="modal" aria-label="Close" >
                             <i class="fas fa-times" style="font-size: 40px; color: #5C5C5C;"></i>
                         </button> -->
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                <div class="reg-model">
-                                    <div class="container">
-                                        <div class="veyolo-img" data-dismiss="modal" aria-label="Close">
-                                            <img src="img/logo-colored.svg" alt="">
-                                            <!-- <h1>Veyolo</h1> -->
-                                        </div>
-                                        <form>
+                        <form>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="reg-model">
+                                        <div class="container">
+                                            <div class="veyolo-img" data-dismiss="modal" aria-label="Close">
+                                                <img src="img/logo-colored.svg" alt="">
+                                            </div>
                                             <div class="row">
-                                                <div class="col-md-12 links">
-                                                <a class="active1" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Personal & company Info</a>
-                                                <a id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Subscription & Payment</a>
+                                                <div class="col-md-2"></div>
+                                                <div class="col-md-8">
+                                                    
+                                                        <div class="row">
+                                                            <div class="col-md-12 links">
+                                                            <a class="active1">Personal & company Info</a>
+                                                            <a >Subscription & Payment</a>
+                                                            </div>
+                                                            <div class="col-md-12"><h5>Personal Information</h5></div>
+                                                            <div class="col-md-6 col-sm-12 pad"><input type="text" placeholder="Full Name"></div>
+                                                            <div class="col-md-2 col-sm-5 pad">
+                                                            <select class="custom-select" id="validationCustom04" >
+                                                                <option selected disabled value="+02">+02</option>
+                                                                <option>+22</option>
+                                                                <option>+65</option>
+                                                                <option>+79</option>
+                                                            </select>
+                                                            </div>
+                                                            <div class="col-md-4 col-sm-7 pad"><input type="phone" placeholder="Phone Number"></div>
+                                                            <div class="col-md-6 col-sm-12 pad"><input type="text" placeholder="Email"></div>
+                                                            <div class="col-md-6 col-sm-12 pad"></div>
+                                                            <div class="col-md-12 col-sm-12 pad"><h5>Company Information</h5></div>
+                                                            <div class="col-md-6 pad"><input type="text" placeholder="Company Information"></div>
+                                                            <div class="col-md-6 pad"><input type="text" placeholder="Company Email"></div>
+                                                            <div class="col-md-3 pad">
+                                                                <select class="custom-select" id="validationCustom04" >
+                                                                    <option selected disabled value="+02">Country</option>
+                                                                    <option>Iran</option>
+                                                                    <option>Sudan</option>
+                                                                    <option>Newsland</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-md-3 pad">
+                                                                <select class="custom-select" id="validationCustom04" >
+                                                                <option selected disabled value="+02">Province</option>
+                                                                <option>+22</option>
+                                                                <option>+65</option>
+                                                                <option>+79</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-md-3 pad">
+                                                                <select class="custom-select" id="validationCustom04" >
+                                                                <option selected disabled value="+02">City</option>
+                                                                <option>+22</option>
+                                                                <option>+65</option>
+                                                                <option>+79</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-md-3 pad"><input type="phone" placeholder="ZIP Code"></div>
+                                                            <div class="col-md-6 pad"><input type="text" placeholder="Address"></div>
+                                                            <div class="col-md-6 pad"></div>
+                                                            <div class="col-md-2 pad">
+                                                                <select class="custom-select" id="validationCustom04" >
+                                                                    <option selected disabled value="+02">+02</option>
+                                                                    <option>+22</option>
+                                                                    <option>+65</option>
+                                                                    <option>+79</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-md-4 pad"><input type="phone" placeholder="Phone Number"></div>
+                                                            <div class="col-md-2 pad">
+                                                                <select class="custom-select" id="validationCustom04" >
+                                                                    <option selected disabled value="+02">+02</option>
+                                                                    <option>+22</option>
+                                                                    <option>+65</option>
+                                                                    <option>+79</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-md-4 pad"><input type="phone" placeholder="land Number"></div>
+                                                            <div class="col-md-6 pad add"><a href="#!" class="add1 block2">+ add another</a></div>
+                                                            <div class="col-md-6 pad add"><a href="#!" class="add2">+ add another</a></div>
+                                                            <div class="col-md-12 pad">
+                                                                <div class="col-md-12 pad"><h4>Company Files</h4></div>
+                                                                <div class="col-md-12 file pad">
+                                                                    <h5>Business Registration</h5>
+                                                                    <input type="file" class="form-control" accept="image/x-png,image/png,image/jpeg">
+                                                                    <label for="file-upload" class="custom-file-upload">
+                                                                        <img src="img/plus-solid.svg" alt="">
+                                                                        <P>Upload Images ( Uploaded images SHOULD be either .png or .jpg</P>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-md-12 file pad">
+                                                                        <h5>Business Registration</h5>
+                                                                        <input type="file" class="form-control" accept="image/x-png,image/png,image/jpeg">
+                                                                        <label for="file-upload" class="custom-file-upload">
+                                                                            <img src="img/plus-solid.svg" alt="">
+                                                                            <P>Upload Images ( Uploaded images SHOULD be either .png or .jpg</P>
+                                                                        </label>
+                                                                </div>
+                                                                <div class="col-md-12 file pad">
+                                                                        <h5>Business Registration</h5>
+                                                                        <input type="file" class="form-control" accept="image/x-png,image/png,image/jpeg">
+                                                                        <label for="file-upload" class="custom-file-upload">
+                                                                            <img src="img/plus-solid.svg" alt="">
+                                                                            <P>Upload Images ( Uploaded images SHOULD be either .png or .jpg</P>
+                                                                        </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 links2">
+                                                            <a href="#!" data-dismiss="modal" aria-label="Close">Cancel</a>
+                                                            <a class="active2" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Next</a>
+                                                            </div>
+                                                        </div>
+                                                    
                                                 </div>
-                                                <div class="col-md-12"><h5>Personal Information</h5></div>
-                                                <div class="col-md-6 col-sm-12 pad"><input type="text" placeholder="Full Name"></div>
-                                                <div class="col-md-2 col-sm-5 pad">
-                                                <select class="custom-select" id="validationCustom04" >
-                                                    <option selected disabled value="+02">+02</option>
-                                                    <option>+22</option>
-                                                    <option>+65</option>
-                                                    <option>+79</option>
-                                                </select>
-                                                </div>
-                                                <div class="col-md-4 col-sm-7 pad"><input type="phone" placeholder="Phone Number"></div>
-                                                <div class="col-md-6 col-sm-12 pad"><input type="text" placeholder="Email"></div>
-                                                <div class="col-md-6 col-sm-12 pad"></div>
-                                                <div class="col-md-12 col-sm-12 pad"><h5>Company Information</h5></div>
-                                                <div class="col-md-6 pad"><input type="text" placeholder="Company Information"></div>
-                                                <div class="col-md-6 pad"><input type="text" placeholder="Company Email"></div>
-                                                <div class="col-md-3 pad">
-                                                    <select class="custom-select" id="validationCustom04" >
-                                                        <option selected disabled value="+02">Country</option>
-                                                        <option>Iran</option>
-                                                        <option>Sudan</option>
-                                                        <option>Newsland</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-3 pad">
-                                                    <select class="custom-select" id="validationCustom04" >
-                                                    <option selected disabled value="+02">Province</option>
-                                                    <option>+22</option>
-                                                    <option>+65</option>
-                                                    <option>+79</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-3 pad">
-                                                    <select class="custom-select" id="validationCustom04" >
-                                                    <option selected disabled value="+02">City</option>
-                                                    <option>+22</option>
-                                                    <option>+65</option>
-                                                    <option>+79</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-3 pad"><input type="phone" placeholder="ZIP Code"></div>
-                                                <div class="col-md-6 pad"><input type="text" placeholder="Address"></div>
-                                                <div class="col-md-6 pad"></div>
-                                                <div class="col-md-2 pad">
-                                                    <select class="custom-select" id="validationCustom04" >
-                                                        <option selected disabled value="+02">+02</option>
-                                                        <option>+22</option>
-                                                        <option>+65</option>
-                                                        <option>+79</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-4 pad"><input type="phone" placeholder="Phone Number"></div>
-                                                <div class="col-md-2 pad">
-                                                    <select class="custom-select" id="validationCustom04" >
-                                                        <option selected disabled value="+02">+02</option>
-                                                        <option>+22</option>
-                                                        <option>+65</option>
-                                                        <option>+79</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-4 pad"><input type="phone" placeholder="land Number"></div>
-                                                <div class="col-md-6 pad add"><a href="#!" class="add1 block2">+ add another</a></div>
-                                                <div class="col-md-6 pad add"><a href="#!" class="add2">+ add another</a></div>
-                                                <div class="col-md-12 pad">
-                                                    <div class="col-md-12 pad"><h4>Company Files</h4></div>
-                                                    <div class="col-md-12 file pad">
-                                                        <h5>Business Registration</h5>
-                                                        <input type="file" class="form-control" accept="image/x-png,image/png,image/jpeg">
-                                                        <label for="file-upload" class="custom-file-upload">
-                                                            <img src="img/plus-solid.svg" alt="">
-                                                            <P>Upload Images ( Uploaded images SHOULD be either .png or .jpg</P>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-md-12 file pad">
-                                                            <h5>Business Registration</h5>
-                                                            <input type="file" class="form-control" accept="image/x-png,image/png,image/jpeg">
-                                                            <label for="file-upload" class="custom-file-upload">
-                                                                <img src="img/plus-solid.svg" alt="">
-                                                                <P>Upload Images ( Uploaded images SHOULD be either .png or .jpg</P>
-                                                            </label>
-                                                    </div>
-                                                    <div class="col-md-12 file pad">
-                                                            <h5>Business Registration</h5>
-                                                            <input type="file" class="form-control" accept="image/x-png,image/png,image/jpeg">
-                                                            <label for="file-upload" class="custom-file-upload">
-                                                                <img src="img/plus-solid.svg" alt="">
-                                                                <P>Upload Images ( Uploaded images SHOULD be either .png or .jpg</P>
-                                                            </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12 links2">
-                                                <a href="#!" data-dismiss="modal" aria-label="Close">Cancel</a>
-                                                <a class="active2" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Next</a>
-                                                </div>
+                                                <div class="col-md-2"></div>
                                             </div>
-                                        </form>
-                                        <div class="copy">
-                                            <p class="power">Copyright ©2019 All rights reserved</p>
-                                            <p class="power">Powered by <a href="#!" class="plus">ViewPlus</a></p>
+                                            <div class="copy">
+                                                <p class="power">Copyright ©2019 All rights reserved</p>
+                                                <p class="power">Powered by <a href="#!" class="plus">ViewPlus</a></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                <div class="container">
-                                    <div class="veyolo-img" data-dismiss="modal" aria-label="Close">
-                                        <img src="img/logo-colored.svg" alt="">
-                                        <!-- <h1>Veyolo</h1> -->
-                                    </div>                                    
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-md-12 links">
-                                                <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Personal & company Info</a>
-                                                <a class="active1" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Subscription & Payment</a>
-                                            </div>
-                                            <div class="col-12"><h5>Subscription Information</h5></div>
-                                            <div class="col-6">
-                                                <select class="custom-select" id="validationCustom04" >
-                                                    <option selected disabled value="+02">+02</option>
-                                                    <option>+22</option>
-                                                    <option>+65</option>
-                                                    <option>+79</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-6">
-                                                <select class="custom-select" id="validationCustom04" >
-                                                    <option selected disabled value="+02">+02</option>
-                                                    <option>+22</option>
-                                                    <option>+65</option>
-                                                    <option>+79</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-12"><h5>Payment Information</h5></div>
-                                            <div class="col-12 show">
-                                                <div class="radio">
-                                                    <input type="radio" id="male" name="gender" value="male" style="width: auto;" checked>
-                                                    <span>Credit card</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 hide1"><input type="text" placeholder="Name on Card"></div>
-                                            <div class="col-6 hide1"><input type="phone" placeholder="Card Number"></div>
-                                            <div class="col-12 hide1"></div>
-                                            <div class="col-3 hide1">
-                                                <select class="custom-select" id="validationCustom04" >
-                                                    <option selected disabled value="+02">+02</option>
-                                                    <option>+22</option>
-                                                    <option>+65</option>
-                                                    <option>+79</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-3 hide1">
-                                                <select class="custom-select" id="validationCustom04" >
-                                                    <option selected disabled value="+02">+02</option>
-                                                    <option>+22</option>
-                                                    <option>+65</option>
-                                                    <option>+79</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-6 hide1"><input type="text" placeholder="Cvv"></div>
-                                            <div class="col-12">
-                                                <div class="radio">
-                                                    <input type="radio" id="male" name="gender" value="male" style="width: auto;" class="show" >
-                                                    <span>Cash</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12 links2">
-                                                <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">back</a>
-                                                <a class="active2" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" >Submit Request</a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <div class="copy">
-                                        <p class="power">Copyright ©2019 All rights reserved</p>
-                                        <p class="power">Powered by <a href="#!" class="plus">ViewPlus</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                <div class="container">
-                                    <div class="top">
-                                        <div class="veyolo-img"  data-dismiss="modal" aria-label="Close">
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="container">
+                                        <div class="veyolo-img" data-dismiss="modal" aria-label="Close"  data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
                                             <img src="img/logo-colored.svg" alt="">
-                                            <!-- <h1>Veyolo</h1> -->
                                         </div>
-                                        <div class="thank">
-                                            <img src="img/check-circle-regular.svg" alt="">
-                                            <h1>THANK YOU!!</h1>
-                                            <p>YOU HAVE SUCCESSFULLY SUBSCRIBED IN VEYOLO</p>
-                                            <span>Please check your email for further instruction on system activation. You have 48 hours to pay cash to fully activate Veyolo system.</span>
+                                        <div class="row">
+                                            <div class="col-md-2"></div>
+                                            <div class="col-md-8">
+                                                
+                                                    <div class="row">
+                                                        <div class="col-md-12 links">
+                                                            <a >Personal & company Info</a>
+                                                            <a class="active1">Subscription & Payment</a>
+                                                        </div>
+                                                        <div class="col-12"><h5>Subscription Information</h5></div>
+                                                        <div class="col-6">
+                                                            <select class="custom-select" id="validationCustom04" >
+                                                                <option selected disabled value="+02">+02</option>
+                                                                <option>+22</option>
+                                                                <option>+65</option>
+                                                                <option>+79</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <select class="custom-select" id="validationCustom04" >
+                                                                <option selected disabled value="+02">+02</option>
+                                                                <option>+22</option>
+                                                                <option>+65</option>
+                                                                <option>+79</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12"><h5>Payment Information</h5></div>
+                                                        <div class="col-12 show">
+                                                            <div class="radio">
+                                                                <input type="radio" id="male" name="gender" value="male" style="width: auto;" checked>
+                                                                <span>Credit card</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 hide1"><input type="text" placeholder="Name on Card"></div>
+                                                        <div class="col-6 hide1"><input type="phone" placeholder="Card Number"></div>
+                                                        <div class="col-12 hide1"></div>
+                                                        <div class="col-3 hide1">
+                                                            <select class="custom-select" id="validationCustom04" >
+                                                                <option selected disabled value="+02">+02</option>
+                                                                <option>+22</option>
+                                                                <option>+65</option>
+                                                                <option>+79</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-3 hide1">
+                                                            <select class="custom-select" id="validationCustom04" >
+                                                                <option selected disabled value="+02">+02</option>
+                                                                <option>+22</option>
+                                                                <option>+65</option>
+                                                                <option>+79</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-6 hide1"><input type="text" placeholder="Cvv"></div>
+                                                        <div class="col-12">
+                                                            <div class="radio">
+                                                                <input type="radio" id="male" name="gender" value="male" style="width: auto;" class="show" >
+                                                                <span>Cash</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 links2">
+                                                            <a id="home-tab" class="tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">back</a>
+                                                            <a class="active3" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" >Submit Request</a>
+                                                        </div>
+                                                    </div>
+                                                
+                                            </div>
+                                            <div class="col-md-2"></div>
                                         </div>
                                         <div class="copy">
                                             <p class="power">Copyright ©2019 All rights reserved</p>
@@ -768,8 +760,28 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <div class="container">
+                                        <div class="top">
+                                            <div class="veyolo-img" data-dismiss="modal" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                                                <img src="img/logo-colored.svg" alt="">
+                                            </div>
+                                            <div class="thank">
+                                                <img src="img/check-circle-regular.svg" alt="">
+                                                <h1>THANK YOU!!</h1>
+                                                <p>YOU HAVE SUCCESSFULLY SUBSCRIBED IN VEYOLO</p>
+                                                <span>Please check your email for further instruction on system activation. You have 48 hours to pay cash to fully activate Veyolo system.</span>
+                                                <a href="index.html" class="back">Back to home</a>
+                                            </div>
+                                            <div class="copy">
+                                                <p class="power">Copyright ©2019 All rights reserved</p>
+                                                <p class="power">Powered by <a href="#!" class="plus">ViewPlus</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

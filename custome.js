@@ -212,3 +212,17 @@ $(document).ready(function () {
       '<div class="col-md-2 pad"><select class="custom-select" id="validationCustom04" ><option selected disabled value="+02">+02</option><option>+22</option><option>+65</option><option>+79</option></select></div><div class="col-md-4 pad"><input type="phone" placeholder="Phone Number"></div>'
     );
   });
+
+$(".active2").click(function () {
+  $(".active2").removeClass("active");
+});
+
+
+$(".active3").click(function () {
+  $(".active3").removeClass("active");
+});
+
+
+$(".tab").click(function () {
+  $(".tab").removeClass("active");
+});

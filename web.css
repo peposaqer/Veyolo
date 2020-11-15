@@ -346,11 +346,36 @@ form {
   text-align: center;
   border-radius: 24px;
 }
-
+/* 
 .links a:hover {
   background-color: #1D1D1D;
   border: 1px solid #1D1D1D;
   color: #FFF;
+} */
+
+.active3 {
+  background-color: #ff7600;
+  color: #FFF !important;
+  padding: 0.8rem !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+.back {
+    color: #FFF;
+    background-color: #ff7600;
+    width: 20%;
+    text-align: center;
+    align-self: center;
+    margin-top: 2rem;
+    border-radius: 24px;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.back:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .veyolo-img {
