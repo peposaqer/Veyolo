@@ -360,7 +360,7 @@ form {
 }
 
 .veyolo-img img {
-  padding-right: 1rem;
+  cursor: pointer;
 }
 
 .veyolo-img h1 {
