@@ -84,7 +84,7 @@ var topMenu = $("#top-menu"),
   });
 
 // Bind to scroll
-// $(window).scroll(function () {
+$(window).scroll(function () {
 //   // Get container scroll position
 //   var fromTop = $(this).scrollTop() + topMenuHeight;
 
@@ -123,10 +123,10 @@ var topMenu = $("#top-menu"),
 
 //   $(".img-3").children("svg").find(".a").css("stroke", "#5f5f5f");
 //   $(".img-3").children("svg").find(".b").css("fill", "#5f5f5f");
-//   $(".navbar-brand").children("svg").find(".a").css("fill", "#fff");
-//   $(".navbar-brand").children("svg").find(".a").css("stroke", "none");
-//   $(".navbar-brand").children("svg").find(".b").css("fill", "#fff");
-// });
+  $(".navbar-brand").children("svg").find(".a").css("fill", "#fff");
+  $(".navbar-brand").children("svg").find(".a").css("stroke", "none");
+  $(".navbar-brand").children("svg").find(".b").css("fill", "#fff");
+});
 
 // Active / Deactive arrows btns
 $("a").on("click", function () {
