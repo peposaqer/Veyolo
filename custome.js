@@ -266,16 +266,16 @@ $(".arbic").on("click", arabicLang);
 $(".en").hide();
 
 //show more button
-$(".arbic").click(function () {
-  $(".arbic").hide();
-  $(".en").show();
-});
+// $(".arbic").click(function () {
+//   $(".arbic").hide();
+//   $(".en").show();
+// });
 
 //show more button
-$(".en").click(function () {
-  $(".en").hide();
-  $(".arbic").show();
-});
+// $(".en").click(function () {
+//   $(".en").hide();
+//   $(".arbic").show();
+// });
 
 
 function arabicLang() {
@@ -410,6 +410,8 @@ function arabicLang() {
   $("#model_p").text(language.model_p);
   $("#model_button_7").text(language.model_button_7);
   $(".Contact ul").css({ "margin-left": "5rem" });
+  $(".why .porta").css({ "margin-right": "2rem" });
+  $(".pricing .porta").css({ "margin-right": "2rem" });
 
   // Function To Dismiss Progress Ring
   // dismissProgress();
