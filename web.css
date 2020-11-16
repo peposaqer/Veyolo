@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 /* Track */
@@ -8,7 +8,7 @@
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ff7600; 
+  background: #5c5c55; 
   border-radius: 10px;
 }
 
@@ -127,8 +127,8 @@ a {
 /* start about */
 
 .about {
-  height: 100vh;
-  padding-top: 10%;
+  height: 100%;
+  padding-top: 5rem;
 }
 
 /* .about .one {
@@ -163,8 +163,8 @@ a {
 /* start why */
 
 .why {
-  height: 100vh;
-  padding-top: 8rem;
+  height: 100%;
+  padding-top: 10rem;
 }
 
 .why h1 {
@@ -228,7 +228,7 @@ a {
 .pricing {
   /* height: 100vh; */
   padding-top: 8rem;
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
 }
 
 .pricing h1 {
@@ -587,7 +587,7 @@ h4 {
 
 .album {
   padding-top: 8rem;
-  height: 100vh;
+  height: 100%;
 }
 
 .album .porta {
@@ -665,7 +665,7 @@ h4 {
 
 .Testimonials {
   padding-top: 8rem;
-  height: 100vh;
+  height: 100%;
 }
 
 .Testimonials .porta {
@@ -741,7 +741,8 @@ h4 {
 
 .Partners {
   padding-top: 8rem;
-  height: 100vh;
+  padding-bottom: 8rem;
+  height: 100%;
 }
 
 .Partners .porta {
@@ -892,7 +893,7 @@ h4 {
   }
   
   .header .Register {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
 
   .pad {

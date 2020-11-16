@@ -105,28 +105,28 @@ var topMenu = $("#top-menu"),
 //     .addClass("active");
 // });
 
-// hover on partners img
-$(document).ready(function () {
-  $(".partnres-img").hover(
-    function () {
-      $(this).css("box-shadow", "0px 3px 1px 1px #ff7600");
-      $(this).css("padding", "10");
-    },
-    function () {
-      $(this).css("box-shadow", "0px 0px 0px #888");
-      $(this).css("padding", "0");
-    }
-  );
+// // hover on partners img
+// $(document).ready(function () {
+//   $(".partnres-img").hover(
+//     function () {
+//       $(this).css("box-shadow", "0px 3px 1px 1px #ff7600");
+//       $(this).css("padding", "10");
+//     },
+//     function () {
+//       $(this).css("box-shadow", "0px 0px 0px #888");
+//       $(this).css("padding", "0");
+//     }
+//   );
 
-  $(".img-1").children("svg").find(".a").css("stroke", "#5f5f5f");
-  $(".img-1").children("svg").find(".b").css("fill", "#5f5f5f");
+//   $(".img-1").children("svg").find(".a").css("stroke", "#5f5f5f");
+//   $(".img-1").children("svg").find(".b").css("fill", "#5f5f5f");
 
-  $(".img-3").children("svg").find(".a").css("stroke", "#5f5f5f");
-  $(".img-3").children("svg").find(".b").css("fill", "#5f5f5f");
-  $(".navbar-brand").children("svg").find(".a").css("fill", "#fff");
-  $(".navbar-brand").children("svg").find(".a").css("stroke", "none");
-  $(".navbar-brand").children("svg").find(".b").css("fill", "#fff");
-});
+//   $(".img-3").children("svg").find(".a").css("stroke", "#5f5f5f");
+//   $(".img-3").children("svg").find(".b").css("fill", "#5f5f5f");
+//   $(".navbar-brand").children("svg").find(".a").css("fill", "#fff");
+//   $(".navbar-brand").children("svg").find(".a").css("stroke", "none");
+//   $(".navbar-brand").children("svg").find(".b").css("fill", "#fff");
+// });
 
 // Active / Deactive arrows btns
 $("a").on("click", function () {
@@ -373,9 +373,9 @@ function arabicLang() {
   $("#model_input_h5_2").text(language.model_input_h5_2);
   $("#model_input_5").attr("placeholder", language.model_input_5);
   $("#model_input_6").attr("placeholder", language.model_input_6);
-  $("#model_input_7").attr("value", language.model_input_7);
-  $("#model_input_8").attr("placeholder", language.model_input_8);
-  $("#model_input_9").attr("placeholder", language.model_input_9);
+  $("#model_input_7").text(language.model_input_7);
+  $("#model_input_8").text(language.model_input_8);
+  $("#model_input_9").text(language.model_input_9);
   $("#model_input_10").attr("placeholder", language.model_input_10);
   $("#model_input_11").attr("placeholder", language.model_input_11);
   $("#model_input_12").attr("placeholder", language.model_input_12);
@@ -396,12 +396,12 @@ function arabicLang() {
   $("#model_h5_4").text(language.model_h5_4);
   $("#model_h5_5").text(language.model_h5_5);
   $("#model_h5_6").text(language.model_h5_6);
-  $("#model_input_16").attr("placeholder", language.model_input_16);
-  $("#model_input_17").attr("placeholder", language.model_input_17);
+  $("#model_input_16").text(language.model_input_16);
+  $("#model_input_17").text(language.model_input_17);
   $("#model_input_18").attr("placeholder", language.model_input_18);
   $("#model_input_19").attr("placeholder", language.model_input_19);
-  $("#model_input_20").attr("placeholder", language.model_input_20);
-  $("#model_input_21").attr("placeholder", language.model_input_21);
+  $("#model_input_20").text(language.model_input_20);
+  $("#model_input_21").text(language.model_input_21);
   $("#model_input_22").attr("placeholder", language.model_input_22);
   $("#model_button_5").text(language.model_button_5);
   $("#model_button_6").text(language.model_button_6);
@@ -510,9 +510,9 @@ function englishLang() {
   $("#model_input_h5_2").text(language.model_input_h5_2);
   $("#model_input_5").attr("placeholder", language.model_input_5);
   $("#model_input_6").attr("placeholder", language.model_input_6);
-  $("#model_input_7").attr("value", language.model_input_7);
-  $("#model_input_8").attr("placeholder", language.model_input_8);
-  $("#model_input_9").attr("placeholder", language.model_input_9);
+  $("#model_input_7").text(language.model_input_7);
+  $("#model_input_8").text(language.model_input_8);
+  $("#model_input_9").text(language.model_input_9);
   $("#model_input_10").attr("placeholder", language.model_input_10);
   $("#model_input_11").attr("placeholder", language.model_input_11);
   $("#model_input_12").attr("placeholder", language.model_input_12);
@@ -533,13 +533,13 @@ function englishLang() {
   $("#model_h5_4").text(language.model_h5_4);
   $("#model_h5_5").text(language.model_h5_5);
   $("#model_h5_6").text(language.model_h5_6);
-  $("#model_input_16").attr("placeholder", language.model_input_16);
-  $("#model_input_17").attr("placeholder", language.model_input_17);
+  $("#model_input_16").text(language.model_input_16);
+  $("#model_input_17").text(language.model_input_17);
   $("#model_input_18").attr("placeholder", language.model_input_18);
   $("#model_input_19").attr("placeholder", language.model_input_19);
   $("#model_input_20").attr("placeholder", language.model_input_20);
-  $("#model_input_21").attr("placeholder", language.model_input_21);
-  $("#model_input_22").attr("placeholder", language.model_input_22);
+  $("#model_input_21").text(language.model_input_21);
+  $("#model_input_22").text(language.model_input_22);
   $("#model_button_5").text(language.model_button_5);
   $("#model_button_6").text(language.model_button_6);
   $("#model_span").text(language.model_span);
