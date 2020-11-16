@@ -1,0 +1,270 @@
+
+{
+    "nav_home": "الصفحة الرئيسية",
+
+    "nav_about": "معلومات عنا",
+
+    "nav_why": "لماذا نحن",
+
+    "nav_pricing": "التسعير",
+
+    "nav_album": "ألبومنا",
+
+    "nav_testimonials": "الشهادات - التوصيات",
+
+    "nav_partners": "شركاء",
+
+    "nav_contact": "اتصل بنا",
+
+    "header_span": "Veyolo",
+
+    "hesder_h2": "السيارة التي تحبها",
+
+    "header_a": "سجل الان!",
+
+    "about_h1": "احصل على",
+
+    "about_h2": "إعرفنا",
+
+    "about_p": "تطبيق مصمم خصيصًا لمساعدة أصحاب الكراجات على تنظيم جميع المعاملات المالية وعملية الإيجار بأكملها التي تتم بين المستأجر والمستأجر منه ، كما أنه يقوم بتحليل تكلفة وإيرادات المرآب الخاص بك بمستندات قابلة للطباعة. عقد إلكتروني مصمم خصيصًا للجراجات لمنح حقوقها. تم تصميم Veyolo بواسطة ViewPlus لمساعدة وحل الجراجات لتحسين تدفق العمل وعملية تأجير السيارات",
+
+    "why_h1": "لماذا",
+
+    "why_h2": "أختر",
+
+    "why_h3": "VEYOLO",
+
+    "why_p1": "مصمم خصيصا لمساعدة اصحاب المرائب.",
+
+    "why_h5-1": "الإيجارات والعقود الإلكترونية",
+
+    "why_p2": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
+
+    "why_h5_2": "تحليل التكلفة والإيرادات",
+
+    "why_p3": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
+
+    "why_h5_3": "الملف الشخصي لمالك السيارة والموظفين",
+
+    "why_p4": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
+
+    "why_h5_4": "التاريخ والمستندات القابلة للطباعة",
+
+    "why_p5": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
+
+    "pricing_h1": "VEYOLO",
+
+    "pricing_h2": "التسعير",
+
+    "pricing_h5_1": "مجانا",
+
+    "pricing_span": "$100/عام",
+
+    "pricing_p1": "لاسينيا جرابيدا",
+
+    "pricing_p2": "Ligula lectus suspendisse",
+
+    "pricing_p3": "Bibendum odio lobortis",
+
+    "pricing_p4": "Gravida lacus quam",
+
+    "pricing_p5": "Sit amet",
+
+    "openModal": "Register Now!",
+
+    "pricing_h5_2": "الأساسي",
+
+    "pricing_span_1": "$200/عام",
+
+    "pricing_p6": "Lacinia gravida",
+
+    "pricing_p7": "Ligula lectus suspendisse",
+
+    "pricing_p8": "Bibendum odio lobortis",
+
+    "pricing_p9": "Gravida lacus quam",
+
+    "pricing_p10": "Rhoncus bibendum",
+
+    "pricing_p11": "Interdum consequat vehicula",
+
+    "pricing_h5_3": "كبار الشخصيات",
+
+    "pricing_span_2": "$400/عام",
+
+    "pricing_p12": "Lacinia gravida",
+
+    "pricing_p13": "Ligula lectus suspendisse",
+
+    "pricing_p14": "Bibendum odio lobortis",
+
+    "pricing_p15": "Gravida lacus quam",
+
+    "pricing_p16": "Nisi orci sodales",
+
+    "pricing_p17": "Est proin gravida",
+
+    "pricing_p18": "Ultrices enim",
+
+    "pricing_h5_4": "غير محدود",
+
+    "pricing_span_3": "$1000/عام",
+
+    "pricing_p19": "Lacinia gravida",
+
+    "pricing_p20": "Ligula lectus suspendisse",
+
+    "pricing_p21": "Bibendum odio lobortis",
+
+    "pricing_p22": "Gravida lacus quam",
+
+    "pricing_p23": "Orci dolor",
+
+    "pricing_p24": "Vulputate eget sodales",
+
+    "pricing_p25": "Lorem vulputate",
+
+    "album_h1": "لنا",
+
+    "album_h2": "الألبوم",
+
+    "album_p": "مثل كل شيء آخر ، لا تزال الألبومات مهمة.",
+
+    "testimonials_h1": "العملاء",
+
+    "testimonials_h2": "الشهادات - التوصيات",
+
+    "testimonials_p": "نحن نبني عائلة وليس عملاء فقط.",
+
+    "testimonials_h5": "إمبيرديت موريس",
+
+    "testimonials_p1": "وسريعا، الثعلب البني يقفز أكثر من كلب كسول. يتدفق دي جي عندما MTV ax quiz quiz prog. مسابقة MTV غير المرغوب فيها تم تكريمها.",
+
+    "testimonials_h5_1": "إمبيرديت موريس",
+
+    "testimonials_p2": "وسريعا، الثعلب البني يقفز أكثر من كلب كسول. يتدفق دي جي عندما MTV ax quiz quiz prog. مسابقة MTV غير المرغوب فيها تم تكريمها.",
+
+    "testimonials_h5_2": "إمبيرديت موريس",
+
+    "testimonials_p3": "وسريعا، الثعلب البني يقفز أكثر من كلب كسول. يتدفق دي جي عندما MTV ax quiz quiz prog. مسابقة MTV غير المرغوب فيها تم تكريمها.",
+
+    "testimonials_h5_3": "إمبيرديت موريس",
+
+    "testimonials_p4": "وسريعا، الثعلب البني يقفز أكثر من كلب كسول. يتدفق دي جي عندما MTV ax quiz quiz prog. مسابقة MTV غير المرغوب فيها تم تكريمها.",
+
+    "partners_h1": "لنا",
+
+    "partners_h2": "العملاء",
+
+    "partners_p": "دعونا نسير مسافة ميل إضافي معًا!",
+
+    "Contact_h1": "اتصل بنا",
+
+    "contact_p": "لدي سؤال؟ اتصل بنا الآن يسعدنا مساعدتك في أي وقت وفي أي لحظة",
+
+    "contact_email": "بريدك الالكتروني",
+
+    "contact_textarea": "رسالة",
+
+    "contact_h3": "تابعنا",
+
+    "contact_copy": "حقوق النشر © 2019 جميع الحقوق محفوظة بدعم من ViewPlus",
+
+    "model_button_1": "المعلومات الشخصية ومعلومات الشركة",
+
+    "model_button_2": "الاشتراك والدفع",
+
+    "model_input_h5_1": "معلومات شخصية",
+
+    "model_input_1": "الاسم الكامل",
+
+    "model_input_2": "+20",
+
+    "model_input_3": "رقم الهاتف",
+
+    "model_input_4": "البريد الإلكتروني",
+
+    "model_input_h5_2": "معلومات الشركة",
+
+    "model_input_5": "اسم الشركة",
+
+    "model_input_6": "البريد الإلكتروني للشركة",
+
+    "model_input_7": "بلد",
+
+    "model_input_8": "المحافظة",
+
+    "model_input_9": "مدينة",
+
+    "model_input_10": "الرمز البريدي",
+
+    "model_input_11": "عنوان",
+
+    "model_input_12": "+20",
+
+    "model_input_13": "رقم الهاتف",
+
+    "model_input_14": "+20",
+
+    "model_input_15": "رقم الأرض",
+
+    "model_add_1": "+ أضف آخر",
+    
+    "model_add_2": "+ أضف آخر",
+
+    "model_h5_3": "ملفات الشركة",
+
+    "model_h4_1": "الهوية الوطنية / جواز السفر",
+
+    "model_h4_2": "تسجيل الأعمال التجارية",
+
+    "model_h4_3": "بطاقة ضريبية",
+
+    "model_p_1": "تحميل الصور (يجب أن تكون الصور التي تم تحميلها إما .png أو .jpg",
+
+    "model_p_2": "تحميل الصور (يجب أن تكون الصور التي تم تحميلها إما .png أو .jpg",
+
+    "model_p_3": "تحميل الصور (يجب أن تكون الصور التي تم تحميلها إما .png أو .jpg",
+
+    "model_button_3": "إلغاء",
+
+    "model_button_4": "التالى",
+
+    "model_copy_p_1": "حقوق النشر © 2019 جميع الحقوق محفوظة",
+
+    "model_copy_p_2": "مدعوم من ViewPlus",
+
+    "model_h5_4": "معلومات الاشتراك",
+
+    "model_h5_5": "معلومات الدفع",
+
+    "model_h5_6": "تاريخ انتهاء الصلاحية",
+
+    "model_input_16": "Tristique velTristique فيل",
+
+    "model_input_17": "سنوي - 1،000 جنيه مصري / سنة",
+
+    "model_input_18": "الاسم على البطاقة",
+
+    "model_input_19": "رقم البطاقة",
+
+    "model_input_20": "شهر انتهاء الصلاحية",
+
+    "model_input_21": "سنة انتهاء الصلاحية",
+
+    "model_input_22": "CVV",
+
+    "model_button_5": "إلغاء",
+
+    "model_button_6": "تقديم الطلب",
+
+    "model_thank": "شكرا لكم!!",
+
+    "model_span": "لقد اشتركت بنجاح في VEYOLO",
+
+    "model_p": "يرجى التحقق من بريدك الإلكتروني للحصول على مزيد من التعليمات حول تنشيط النظام. لديك 48 ساعة للدفع نقدًا لتفعيل نظام Veyolo بالكامل.",
+
+    "model_button_7": "العودة إلى الرئيسيه"
+
+
+}

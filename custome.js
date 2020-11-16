@@ -77,33 +77,33 @@ var topMenu = $("#top-menu"),
   menuItems = topMenu.find("a"),
   // Anchors corresponding to menu items
   scrollItems = menuItems.map(function () {
-    var item = $($(this).attr("href"));
+    var item = $(this).attr("href");
     if (item.length) {
       return item;
     }
   });
 
 // Bind to scroll
-$(window).scroll(function () {
-  // Get container scroll position
-  var fromTop = $(this).scrollTop() + topMenuHeight;
+// $(window).scroll(function () {
+//   // Get container scroll position
+//   var fromTop = $(this).scrollTop() + topMenuHeight;
 
-  // Get id of current scroll item
-  var cur = scrollItems.map(function () {
-    if ($(this).offset().top < fromTop) return this;
-  });
-  // Get the id of the current element
-  cur = cur[cur.length - 1];
-  var id = cur && cur.length ? cur[0].id : "";
-  // Set/remove active class
-  menuItems
-    .parent()
-    .removeClass("active")
-    .end()
-    .filter("[href='#" + id + "']")
-    .parent()
-    .addClass("active");
-});
+//   // Get id of current scroll item
+//   var cur = scrollItems.map(function () {
+//     if ($(this).offset().top < fromTop) return this;
+//   });
+//   // Get the id of the current element
+//   cur = cur[cur.length - 1];
+//   var id = cur && cur.length ? cur[0].id : "";
+//   // Set/remove active class
+//   menuItems
+//     .parent()
+//     .removeClass("active")
+//     .end()
+//     .filter("[href='#" + id + "']")
+//     .parent()
+//     .addClass("active");
+// });
 
 // hover on partners img
 $(document).ready(function () {
@@ -130,13 +130,18 @@ $(document).ready(function () {
 
 // Active / Deactive arrows btns
 $("a").on("click", function () {
-  if ($(".img-1").hasClass("swiper-button-disabled") && !$(".img-2").hasClass("swiper-button-disabled")) {
+  if (
+    $(".img-1").hasClass("swiper-button-disabled") &&
+    !$(".img-2").hasClass("swiper-button-disabled")
+  ) {
     $(".img-1").children("svg").find(".a").css("stroke", "#5f5f5f");
     $(".img-1").children("svg").find(".b").css("fill", "#5f5f5f");
     $(".img-2").children("svg").find(".a").css("stroke", "#ff7600");
     $(".img-2").children("svg").find(".b").css("fill", "#ff7600");
-  }
-  else if(!$(".img-1").hasClass("swiper-button-disabled") && $(".img-2").hasClass("swiper-button-disabled")){
+  } else if (
+    !$(".img-1").hasClass("swiper-button-disabled") &&
+    $(".img-2").hasClass("swiper-button-disabled")
+  ) {
     $(".img-2").children("svg").find(".a").css("stroke", "#5f5f5f");
     $(".img-2").children("svg").find(".b").css("fill", "#5f5f5f");
     $(".img-1").children("svg").find(".a").css("stroke", "#ff7600");
@@ -149,7 +154,7 @@ $("a").on("click", function () {
   }
 });
 
-$("a").on('click', function(){
+$("a").on("click", function () {
   if (
     $(".img-3").hasClass("swiper-button-disabled") &&
     !$(".img-4").hasClass("swiper-button-disabled")
@@ -178,7 +183,6 @@ $(".navbar-nav>li>a").on("click", function () {
   $(".navbar-collapse").collapse("hide");
 });
 
-
 // $(".Register").on("click", function () {
 //   console.log("sdlgnlsfgnlds");
 //   $(".reg-model").show();
@@ -186,13 +190,9 @@ $(".navbar-nav>li>a").on("click", function () {
 //   // $("body").css({ "background-color": "rgba(0,0,0,0.5)" });
 // });
 
-
-
 $(document).ready(function () {
-  $(".Register").on("click", function () {
-  });
+  $(".Register").on("click", function () {});
 });
-
 
 $(document).ready(function () {
   $(".radio").on("click", function () {
@@ -200,29 +200,368 @@ $(document).ready(function () {
   });
 });
 
-
 $(document).ready(function () {
   $(".show").on("click", function () {
     $(".hide1").show();
   });
 });
 
-  $(".block2").click(function () {
-    $("form").append(
-      '<div class="col-md-2 pad"><select class="custom-select" id="validationCustom04" ><option selected disabled value="+02">+02</option><option>+22</option><option>+65</option><option>+79</option></select></div><div class="col-md-4 pad"><input type="phone" placeholder="Phone Number"></div>'
-    );
-  });
+$(".block2").click(function () {
+  $("form").append(
+    '<div class="col-md-2 pad"><select class="custom-select" id="validationCustom04" ><option selected disabled value="+02">+02</option><option>+22</option><option>+65</option><option>+79</option></select></div><div class="col-md-4 pad"><input type="phone" placeholder="Phone Number"></div>'
+  );
+});
 
 $(".active2").click(function () {
   $(".active2").removeClass("active");
 });
 
-
 $(".active3").click(function () {
   $(".active3").removeClass("active");
 });
 
-
 $(".tab").click(function () {
   $(".tab").removeClass("active");
+});
+
+// Change Languages
+var language;
+// check langauge on loading page
+function loadLang() {
+  let lang_shor_name = localStorage.getItem("language");
+  if (lang_shor_name === "ar") {
+    arabicLang();
+  } else {
+    englishLang();
+  }
+}
+// get Language
+function getLanguage() {
+  localStorage.getItem("language") == null ? setLanguage("en") : false;
+  $.ajax({
+    url: "language/" + localStorage.getItem("language") + ".json",
+    dataType: "json",
+    async: false,
+    dataType: "json",
+    success: function (lang) {
+      language = lang;
+    },
+  });
+}
+
+// set Language
+function setLanguage(lang) {
+  localStorage.setItem("language", lang);
+}
+// set Language
+function arabicLang(lang) {
+  localStorage.setItem("language", lang);
+}
+// change to English
+$(".en").on("click", englishLang);
+// change to Arabic
+$(".arbic").on("click", arabicLang);
+
+
+$(".en").hide();
+
+//show more button
+$(".arbic").click(function () {
+  $(".arbic").hide();
+  $(".en").show();
+});
+
+//show more button
+$(".en").click(function () {
+  $(".en").hide();
+  $(".arbic").show();
+});
+
+
+function arabicLang() {
+  $(".chang").addClass("right-dir");
+  getLanguage();
+  $("#nav_home").text(language.nav_home);
+  $("#nav_about").text(language.nav_about);
+  $("#nav_why").text(language.nav_why);
+  $("#nav_pricing").text(language.nav_pricing);
+  $("#nav_album").text(language.nav_album);
+  $("#nav_testimonials").text(language.nav_testimonials);
+  $("#nav_partners").text(language.nav_partners);
+  $("#nav_contact").text(language.nav_contact);
+  $("#header_span").text(language.header_span);
+  $("#hesder_h2").text(language.hesder_h2);
+  $("#header_a").text(language.header_a);
+  $("#about_h1").text(language.about_h1);
+  $("#about_h2").text(language.about_h2);
+  $("#about_p").text(language.about_p);
+  $("#why_h1").text(language.why_h1);
+  $("#why_h2").text(language.why_h2);
+  $("#why_h3").text(language.why_h3);
+  $("#why_p1").text(language.why_p1);
+  $("#why_h5_1").text(language.why_h5_1);
+  $("#why_p2").text(language.why_p2);
+  $("#why_h5_2").text(language.why_h5_2);
+  $("#why_p3").text(language.why_p3);
+  $("#why_h5_3").text(language.why_h5_3);
+  $("#why_h5_4").text(language.why_h5_4);
+  $("#pricing_h1").text(language.pricing_h1);
+  $("#pricing_h2").text(language.pricing_h2);
+  $("#pricing_h5_1").text(language.ر);
+  $("#pricing_span").text(language.pricing_span);
+  $("#pricing_p1").text(language.pricing_p1);
+  $("#pricing_p2").text(language.pricing_p2);
+  $("#pricing_p3").text(language.pricing_p3);
+  $("#pricing_p4").text(language.pricing_p4);
+  $("#pricing_p5").text(language.pricing_p5);
+  $("#openModal").text(language.openModal);
+  $("#pricing_h5_2").text(language.pricing_h5_2 );
+  $("#pricing_span_1").text(language.pricing_span_1);
+  $("#pricing_p6").text(language.pricing_p6);
+  $("#pricing_p7").text(language.pricing_p7);
+  $("#pricing_p8").text(language.pricing_p8);
+  $("#pricing_p9").text(language.pricing_p9);
+  $("#pricing_p10").text(language.pricing_p10);
+  $("#pricing_p11").text(language.pricing_p11);
+  $("#pricing_h5_3").text(language.pricing_h5_3);
+  $("#pricing_span_2").text(language.pricing_span_2);
+  $("#pricing_p12").text(language.pricing_p12);
+  $("#pricing_p13").text(language.pricing_p13);
+  $("#pricing_p14").text(language.pricing_p14);
+  $("#pricing_p15").text(language.pricing_p15);
+  $("#pricing_p16").text(language.pricing_p16);
+  $("#pricing_p17").text(language.pricing_p17);
+  $("#pricing_p18").text(language.pricing_p18);
+  $("#pricing_h5_4").text(language.pricing_h5_4);
+  $("#pricing_p19").text(language.pricing_p19);
+  $("#pricing_p20").text(language.pricing_p20);
+  $("#pricing_p21").text(language.pricing_p21);
+  $("#pricing_p22").text(language.pricing_p22);
+  $("#pricing_p23").text(language.pricing_p23);
+  $("#pricing_p24").text(language.pricing_p24);
+  $("#pricing_p25").text(language.pricing_p25);
+  $("#album_h1").text(language.album_h1);
+  $("#album_h2").text(language.album_h2);
+  $("#album_p").text(language.album_p);
+  $("#testimonials_h1").text(language.testimonials_h1);
+  $("#testimonials_h2").text(language.testimonials_h2);
+  $("#testimonials_p").text(language.testimonials_p);
+  $("#testimonials_h5").text(language.testimonials_h5);
+  $("#testimonials_p1").text(language.testimonials_p1);
+  $("#testimonials_h5_1").text(language.testimonials_h5_1);
+  $("#testimonials_p2").text(language.testimonials_p2);
+  $("#testimonials_h5_2").text(language.testimonials_h5_2);
+  $("#testimonials_p3").text(language.testimonials_p3);
+  $("#testimonials_h5_3").text(language.testimonials_h5_3);
+  $("#testimonials_p4").text(language.testimonials_p4);
+  $("#partners_h1").text(language.partners_h1);
+  $("#partners_h2").text(language.partners_h2);
+  $("#partners_p").text(language.partners_p);
+  $("#Contact_h1").text(language.Contact_h1);
+  $("#contact_p").text(language.contact_p);
+  $("#contact_h3").text(language.contact_h3);
+  $("#contact_copy").text(language.contact_copy);  
+  $("#contact_email").attr("placeholder", language.contact_email);
+  $("#contact_textarea").attr("placeholder", language.contact_textarea);
+  $("#model_button_1").text(language.model_button_1);
+  $("#model_button_2").text(language.model_button_2);
+  $("#model_input_h5_1").text(language.model_input_h5_1);
+  $("#model_input_1").attr("placeholder", language.model_input_1);
+  $("#model_input_2").attr("placeholder", language.model_input_2);
+  $("#model_input_3").attr("placeholder", language.model_input_3);
+  $("#model_input_4").attr("placeholder", language.model_input_4);
+  $("#model_input_h5_2").text(language.model_input_h5_2);
+  $("#model_input_5").attr("placeholder", language.model_input_5);
+  $("#model_input_6").attr("placeholder", language.model_input_6);
+  $("#model_input_7").attr("value", language.model_input_7);
+  $("#model_input_8").attr("placeholder", language.model_input_8);
+  $("#model_input_9").attr("placeholder", language.model_input_9);
+  $("#model_input_10").attr("placeholder", language.model_input_10);
+  $("#model_input_11").attr("placeholder", language.model_input_11);
+  $("#model_input_12").attr("placeholder", language.model_input_12);
+  $("#model_input_13").attr("placeholder", language.model_input_13);
+  $("#model_input_14").attr("placeholder", language.model_input_14);
+  $("#model_input_15").attr("placeholder", language.model_input_15);
+  $("#model_add_1").text(language.model_add_1);
+  $("#model_add_2").text(language.model_add_2);
+  $("#model_h5_3").text(language.model_h5_3);
+  $("#model_h4_1").text(language.model_h4_1);
+  $("#model_h4_2").text(language.model_h4_2);
+  $("#model_h4_3").text(language.model_h4_3);
+  $("#model_p_1").text(language.model_p_1);
+  $("#model_p_2").text(language.model_p_2);
+  $("#model_p_3").text(language.model_p_3);
+  $("#model_button_3").text(language.model_button_3);
+  $("#model_button_4").text(language.model_button_4);
+  $("#model_h5_4").text(language.model_h5_4);
+  $("#model_h5_5").text(language.model_h5_5);
+  $("#model_h5_6").text(language.model_h5_6);
+  $("#model_input_16").attr("placeholder", language.model_input_16);
+  $("#model_input_17").attr("placeholder", language.model_input_17);
+  $("#model_input_18").attr("placeholder", language.model_input_18);
+  $("#model_input_19").attr("placeholder", language.model_input_19);
+  $("#model_input_20").attr("placeholder", language.model_input_20);
+  $("#model_input_21").attr("placeholder", language.model_input_21);
+  $("#model_input_22").attr("placeholder", language.model_input_22);
+  $("#model_button_5").text(language.model_button_5);
+  $("#model_button_6").text(language.model_button_6);
+  $("#model_span").text(language.model_span);
+  $("#model_thank").text(language.model_thank);
+  $("#model_p").text(language.model_p);
+  $("#model_button_7").text(language.model_button_7);
+  $(".Contact ul").css({ "margin-left": "5rem" });
+
+  // Function To Dismiss Progress Ring
+  // dismissProgress();
+}
+
+function englishLang() {
+  $(".chang").removeClass("right-dir");
+  getLanguage();
+  $("#nav_home").text(language.nav_home);
+  $("#nav_about").text(language.nav_about);
+  $("#nav_why").text(language.nav_why);
+  $("#nav_pricing").text(language.nav_pricing);
+  $("#nav_album").text(language.nav_album);
+  $("#nav_testimonials").text(language.nav_testimonials);
+  $("#nav_partners").text(language.nav_partners);
+  $("#nav_contact").text(language.nav_contact);
+  $("#header_span").text(language.header_span);
+  $("#hesder_h2").text(language.hesder_h2);
+  $("#header_a").text(language.header_a);
+  $("#about_h1").text(language.about_h1);
+  $("#about_h2").text(language.about_h2);
+  $("#about_p").text(language.about_p);
+  $("#why_h1").text(language.why_h1);
+  $("#why_h2").text(language.why_h2);
+  $("#why_h3").text(language.why_h3);
+  $("#why_p1").text(language.why_p1);
+  $("#why_h5_1").text(language.why_h5_1);
+  $("#why_p2").text(language.why_p2);
+  $("#why_h5_2").text(language.why_h5_2);
+  $("#why_p3").text(language.why_p3);
+  $("#why_h5_3").text(language.why_h5_3);
+  $("#why_h5_4").text(language.why_h5_4);
+  $("#pricing_h1").text(language.pricing_h1);
+  $("#pricing_h2").text(language.pricing_h2);
+  $("#pricing_h5_1").text(language.ر);
+  $("#pricing_span").text(language.pricing_span);
+  $("#pricing_p1").text(language.pricing_p1);
+  $("#pricing_p2").text(language.pricing_p2);
+  $("#pricing_p3").text(language.pricing_p3);
+  $("#pricing_p4").text(language.pricing_p4);
+  $("#pricing_p5").text(language.pricing_p5);
+  $("#openModal").text(language.openModal);
+  $("#pricing_h5_2").text(language.pricing_h5_2);
+  $("#pricing_span_1").text(language.pricing_span_1);
+  $("#pricing_p6").text(language.pricing_p6);
+  $("#pricing_p7").text(language.pricing_p7);
+  $("#pricing_p8").text(language.pricing_p8);
+  $("#pricing_p9").text(language.pricing_p9);
+  $("#pricing_p10").text(language.pricing_p10);
+  $("#pricing_p11").text(language.pricing_p11);
+  $("#pricing_h5_3").text(language.pricing_h5_3);
+  $("#pricing_span_2").text(language.pricing_span_2);
+  $("#pricing_p12").text(language.pricing_p12);
+  $("#pricing_p13").text(language.pricing_p13);
+  $("#pricing_p14").text(language.pricing_p14);
+  $("#pricing_p15").text(language.pricing_p15);
+  $("#pricing_p16").text(language.pricing_p16);
+  $("#pricing_p17").text(language.pricing_p17);
+  $("#pricing_p18").text(language.pricing_p18);
+  $("#pricing_h5_4").text(language.pricing_h5_4);
+  $("#pricing_p19").text(language.pricing_p19);
+  $("#pricing_p20").text(language.pricing_p20);
+  $("#pricing_p21").text(language.pricing_p21);
+  $("#pricing_p22").text(language.pricing_p22);
+  $("#pricing_p23").text(language.pricing_p23);
+  $("#pricing_p24").text(language.pricing_p24);
+  $("#pricing_p25").text(language.pricing_p25);
+  $("#album_h1").text(language.album_h1);
+  $("#album_h2").text(language.album_h2);
+  $("#album_p").text(language.album_p);
+  $("#testimonials_h1").text(language.testimonials_h1);
+  $("#testimonials_h2").text(language.testimonials_h2);
+  $("#testimonials_p").text(language.testimonials_p);
+  $("#testimonials_h5").text(language.testimonials_h5);
+  $("#testimonials_p1").text(language.testimonials_p1);
+  $("#testimonials_h5_1").text(language.testimonials_h5_1);
+  $("#testimonials_p2").text(language.testimonials_p2);
+  $("#testimonials_h5_2").text(language.testimonials_h5_2);
+  $("#testimonials_p3").text(language.testimonials_p3);
+  $("#testimonials_h5_3").text(language.testimonials_h5_3);
+  $("#testimonials_p4").text(language.testimonials_p4);
+  $("#partners_h1").text(language.partners_h1);
+  $("#partners_h2").text(language.partners_h2);
+  $("#partners_p").text(language.partners_p);
+  $("#Contact_h1").text(language.Contact_h1);
+  $("#contact_p").text(language.contact_p);
+  $("#contact_h3").text(language.contact_h3);
+  $("#contact_copy").text(language.contact_copy);
+  $("#contact_email").attr("placeholder", language.contact_email);
+  $("#contact_textarea").attr("placeholder", language.contact_textarea);
+  $("#model_button_1").text(language.model_button_1);
+  $("#model_button_2").text(language.model_button_2);
+  $("#model_input_h5_1").text(language.model_input_h5_1);
+  $("#model_input_1").attr("placeholder", language.model_input_1);
+  $("#model_input_2").attr("placeholder", language.model_input_2);
+  $("#model_input_3").attr("placeholder", language.model_input_3);
+  $("#model_input_4").attr("placeholder", language.model_input_4);
+  $("#model_input_h5_2").text(language.model_input_h5_2);
+  $("#model_input_5").attr("placeholder", language.model_input_5);
+  $("#model_input_6").attr("placeholder", language.model_input_6);
+  $("#model_input_7").attr("value", language.model_input_7);
+  $("#model_input_8").attr("placeholder", language.model_input_8);
+  $("#model_input_9").attr("placeholder", language.model_input_9);
+  $("#model_input_10").attr("placeholder", language.model_input_10);
+  $("#model_input_11").attr("placeholder", language.model_input_11);
+  $("#model_input_12").attr("placeholder", language.model_input_12);
+  $("#model_input_13").attr("placeholder", language.model_input_13);
+  $("#model_input_14").attr("placeholder", language.model_input_14);
+  $("#model_input_15").attr("placeholder", language.model_input_15);
+  $("#model_add_1").text(language.model_add_1);
+  $("#model_add_2").text(language.model_add_2);
+  $("#model_h5_3").text(language.model_h5_3);
+  $("#model_h4_1").text(language.model_h4_1);
+  $("#model_h4_2").text(language.model_h4_2);
+  $("#model_h4_3").text(language.model_h4_3);
+  $("#model_p_1").text(language.model_p_1);
+  $("#model_p_2").text(language.model_p_2);
+  $("#model_p_3").text(language.model_p_3);
+  $("#model_button_3").text(language.model_button_3);
+  $("#model_button_4").text(language.model_button_4);
+  $("#model_h5_4").text(language.model_h5_4);
+  $("#model_h5_5").text(language.model_h5_5);
+  $("#model_h5_6").text(language.model_h5_6);
+  $("#model_input_16").attr("placeholder", language.model_input_16);
+  $("#model_input_17").attr("placeholder", language.model_input_17);
+  $("#model_input_18").attr("placeholder", language.model_input_18);
+  $("#model_input_19").attr("placeholder", language.model_input_19);
+  $("#model_input_20").attr("placeholder", language.model_input_20);
+  $("#model_input_21").attr("placeholder", language.model_input_21);
+  $("#model_input_22").attr("placeholder", language.model_input_22);
+  $("#model_button_5").text(language.model_button_5);
+  $("#model_button_6").text(language.model_button_6);
+  $("#model_span").text(language.model_span);
+  $("#model_thank").text(language.model_thank);
+  $("#model_p").text(language.model_p);
+  $("#model_button_7").text(language.model_button_7);
+
+
+  // Function To Dismiss Progress Ring
+  // dismissProgress();
+}
+
+$(".en").hide();
+
+//show more button
+$(".arbic").click(function () {
+  $(".arbic").hide();
+  $(".en").show();
+});
+
+//show more button
+$(".en").click(function () {
+  $(".en").hide();
+  $(".arbic").show();
 });

@@ -1,0 +1,270 @@
+
+{
+    "nav_home": "Home",
+
+    "nav_about": "About us",
+
+    "nav_why": "Why us",
+
+    "nav_pricing": "Pricing",
+
+    "nav_album": "Our Album",
+
+    "nav_testimonials": "Testimonials",
+
+    "nav_partners": "Partners",
+
+    "nav_contact": "Contact us",
+
+    "header_span": "Veyolo",
+
+    "hesder_h2": "Vehicle You Love",
+
+    "header_a": "Register Now!",
+
+    "about_h1": "Get to",
+
+    "about_h2": "Know Us",
+
+    "about_p": "An application specially designed to help the owners of garages to organize all financial transactions and the entire rental process that takes place between the tenant and the tenant from him.also it analysis the cost and revenue for your garage with a printable documents .it also includes an e-contract thats spiecally designed for garages to grant its rights.Veyolo is designed by ViewPlus to help and solve garages to optimise their work flow and car renting process",
+
+    "why_h1": "WHY",
+
+    "why_h2": "CHOOSE",
+
+    "why_h3": "VEYOLO",
+
+    "why_p1": "Specially designed to help garages owners.",
+
+    "why_h5_1": "Rents & E-contracts",
+
+    "why_p2": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
+
+    "why_h5_2": "Cost and revenue analysis",
+
+    "why_p3": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
+
+    "why_h5_3": "Car owner's & employees profile",
+
+    "why_p4": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
+
+    "why_h5_4": "History & printable documents",
+
+    "why_p5": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
+
+    "pricing_h1": "VEYOLO",
+
+    "pricing_h2": "PRICING",
+
+    "pricing_h5_1": "Free",
+
+    "pricing_span": "$100/year",
+
+    "pricing_p1": "Lacinia gravida",
+
+    "pricing_p2": "Ligula lectus suspendisse",
+
+    "pricing_p3": "Bibendum odio lobortis",
+
+    "pricing_p4": "Gravida lacus quam",
+
+    "pricing_p5": "Sit amet",
+
+    "openModal": "Register Now!",
+
+    "pricing_h5_2": "Basic",
+
+    "pricing_span_1": "$200/year",
+
+    "pricing_p6": "Lacinia gravida",
+
+    "pricing_p7": "Ligula lectus suspendisse",
+
+    "pricing_p8": "Bibendum odio lobortis",
+
+    "pricing_p9": "Gravida lacus quam",
+
+    "pricing_p10": "Rhoncus bibendum",
+
+    "pricing_p11": "Interdum consequat vehicula",
+
+    "pricing_h5_3": "Vip",
+
+    "pricing_span_2": "$400/year",
+
+    "pricing_p12": "Lacinia gravida",
+
+    "pricing_p13": "Ligula lectus suspendisse",
+
+    "pricing_p14": "Bibendum odio lobortis",
+
+    "pricing_p15": "Gravida lacus quam",
+
+    "pricing_p16": "Nisi orci sodales",
+
+    "pricing_p17": "Est proin gravida",
+
+    "pricing_p18": "Ultrices enim",
+
+    "pricing_h5_4": "Unlimited",
+
+    "pricing_span_3": "$1000/year",
+
+    "pricing_p19": "Lacinia gravida",
+
+    "pricing_p20": "Ligula lectus suspendisse",
+
+    "pricing_p21": "Bibendum odio lobortis",
+
+    "pricing_p22": "Gravida lacus quam",
+
+    "pricing_p23": "Orci dolor",
+
+    "pricing_p24": "Vulputate eget sodales",
+
+    "pricing_p25": "Lorem vulputate",
+
+    "album_h1": "OUR",
+
+    "album_h2": "ALBUM",
+
+    "album_p": "Like everything else, albums still matter.",
+
+    "testimonials_h1": "CLIENTS",
+
+    "testimonials_h2": "TESTIMONIALS",
+
+    "testimonials_p": "We're building a family not just customers.",
+
+    "testimonials_h5": "Imperdiet mauris",
+
+    "testimonials_p1": "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by.",
+
+    "testimonials_h5_1": "Imperdiet mauris",
+
+    "testimonials_p2": "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by.",
+
+    "testimonials_h5_2": "Imperdiet mauris",
+
+    "testimonials_p3": "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by.",
+
+    "testimonials_h5_3": "Imperdiet mauris",
+
+    "testimonials_p4": "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by",
+
+    "partners_h1": "OUR",
+
+    "partners_h2": "CLIENTS",
+
+    "partners_p": "Let's walk an extra mile together!",
+
+    "Contact_h1": "CONTACT US",
+
+    "contact_p": "Have a Question? Contact us now We are glad to help you anytime at any moment",
+
+    "contact_email": "Your Email",
+
+    "contact_textarea": "Message",
+
+    "contact_h3": "FOLLOW US",
+
+    "contact_copy": "Copyright ©2019 All rights reserved Powered by ViewPlus",
+
+    "model_button_1": "Personal & company Info",
+
+    "model_button_2": "Subscription & Payment",
+
+    "model_input_h5_1": "Personal Information",
+
+    "model_input_1": "Full Name",
+
+    "model_input_2": "+20",
+
+    "model_input_3": "Phone Number",
+
+    "model_input_4": "Email",
+
+    "model_input_h5_2": "Company Information",
+
+    "model_input_5": "Company Name",
+
+    "model_input_6": "Company Email",
+
+    "model_input_7": "Country",
+
+    "model_input_8": "Province",
+
+    "model_input_9": "City",
+
+    "model_input_10": "ZIP Code",
+
+    "model_input_11": "Address",
+
+    "model_input_12": "+20",
+
+    "model_input_13": "Phone Number",
+
+    "model_input_14": "+20",
+
+    "model_input_15": "Land Number",
+
+    "model_add_1": "+ Add another",
+    
+    "model_add_2": "+ Add another",
+
+    "model_h5_3": "Company Files",
+
+    "model_h4_1": "National ID / Passport",
+
+    "model_h4_2": "Business Registration",
+
+    "model_h4_3": "Tax Card",
+
+    "model_p_1": "Upload Images ( Uploaded images SHOULD be either .png or .jpg",
+
+    "model_p_2": "Upload Images ( Uploaded images SHOULD be either .png or .jpg",
+
+    "model_p_3": "Upload Images ( Uploaded images SHOULD be either .png or .jpg",
+
+    "model_button_3": "Cancel",
+
+    "model_button_4": "Next",
+
+    "model_copy_p_1": "Copyright ©2019 All rights reserved",
+
+    "model_copy_p_2": "Powered by ViewPlus",
+
+    "model_h5_4": "Subscription Information",
+
+    "model_h5_5": "Payment Information",
+
+    "model_h5_6": "Expiry Date",
+
+    "model_input_16": "Tristique vel",
+
+    "model_input_17": "Yearly - EGP 1,000/yr",
+
+    "model_input_18": "Name on Card",
+
+    "model_input_19": "Card Number",
+
+    "model_input_20": "Expiry Month",
+
+    "model_input_21": "Expiry Year",
+
+    "model_input_22": "CVV",
+
+    "model_button_5": "back",
+
+    "model_button_6": "Submit Request",
+
+    "model_thank": "THANK YOU!!",
+
+    "model_span": "YOU HAVE SUCCESSFULLY SUBSCRIBED IN VEYOLO",
+
+    "model_p": "Please check your email for further instruction on system activation. You have 48 hours to pay cash to fully activate Veyolo system.",
+
+    "model_button_7": "Back to Home"
+
+
+}

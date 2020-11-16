@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
     <link rel="stylesheet" href="web.css" />
   </head>
-  <body>
+  <body onload="loadLang()">
     <!-- start nav -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="153" height="33" viewBox="0 0 153 33"><defs><style>.a,.b{fill:#fff;}.b{font-size:28px;font-family:WorkSans-Bold, Work Sans;font-weight:700;}</style></defs><g transform="translate(-787 -199)"><path class="a" d="M1329.613,96.565h-2.96a10.4,10.4,0,0,0-20.34.069,14.657,14.657,0,0,0-13.343,14.564v6.117h7.11a6.248,6.248,0,0,0,11.694,0h8.829a6.256,6.256,0,0,0,11.841-.4,10.368,10.368,0,0,0-2.83-20.351Zm-23.69,21.33a2.781,2.781,0,1,1,2.787-2.781A2.78,2.78,0,0,1,1305.923,117.9Zm20.531,0a2.781,2.781,0,1,1,2.787-2.781A2.787,2.787,0,0,1,1326.454,117.9Zm5.642-5.458a6.25,6.25,0,0,0-11.52.546H1311.8a6.248,6.248,0,0,0-11.746,0h-2.743V111.2a10.3,10.3,0,0,1,8.785-10.171v6.012h4.341V98.731a6.055,6.055,0,0,1,12.11,0V100.9h7.066a6.031,6.031,0,0,1,2.483,11.54Z" transform="translate(-505.971 110.639)"/><text class="b" transform="translate(848 225)"><tspan x="0" y="0">Veyolo</tspan></text></g></svg></a>
+    <nav class="chang navbar sticky-top navbar-expand-lg navbar-dark">
+        <div class="chang container">
+            <a class="chang navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="153" height="33" viewBox="0 0 153 33"><defs><style>.a,.b{fill:#fff;}.b{font-size:28px;font-family:WorkSans-Bold, Work Sans;font-weight:700;}</style></defs><g transform="translate(-787 -199)"><path class="a" d="M1329.613,96.565h-2.96a10.4,10.4,0,0,0-20.34.069,14.657,14.657,0,0,0-13.343,14.564v6.117h7.11a6.248,6.248,0,0,0,11.694,0h8.829a6.256,6.256,0,0,0,11.841-.4,10.368,10.368,0,0,0-2.83-20.351Zm-23.69,21.33a2.781,2.781,0,1,1,2.787-2.781A2.78,2.78,0,0,1,1305.923,117.9Zm20.531,0a2.781,2.781,0,1,1,2.787-2.781A2.787,2.787,0,0,1,1326.454,117.9Zm5.642-5.458a6.25,6.25,0,0,0-11.52.546H1311.8a6.248,6.248,0,0,0-11.746,0h-2.743V111.2a10.3,10.3,0,0,1,8.785-10.171v6.012h4.341V98.731a6.055,6.055,0,0,1,12.11,0V100.9h7.066a6.031,6.031,0,0,1,2.483,11.54Z" transform="translate(-505.971 110.639)"/><text class="b" transform="translate(848 225)"><tspan x="0" y="0">Veyolo</tspan></text></g></svg></a>
         <button
-            class="navbar-toggler"
+            class="chang navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -26,37 +26,38 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
         >
-            <span class="navbar-toggler-icon"></span>
+            <span class="chang navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto" id="top-menu">
-            <li class="nav-item">
-                <a class="nav-link" href="#Home">Home </a>
+        <div class="chang collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="chang navbar-nav ml-auto" id="top-menu">
+            <li class="chang nav-item">
+                <a class="chang nav-link" id="nav_home" href="#Home">Home </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#About">About us</a>
+            <li class="chang nav-item">
+                <a class="chang nav-link" id="nav_about" href="#About">About us</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#Why">Why us</a>
+            <li class="chang nav-item">
+                <a class="chang nav-link" id="nav_why" href="#Why">Why us</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#Pricing">Pricing</a>
+            <li class="chang nav-item">
+                <a class="chang nav-link" id="nav_pricing" href="#Pricing">Pricing</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#Album">Our Album</a>
+            <li class="chang nav-item">
+                <a class="chang nav-link" id="nav_album" href="#Album">Our Album</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#Testimonials">Testimonials</a>
+            <li class="chang nav-item">
+                <a class="chang nav-link" id="nav_testimonials" href="#Testimonials">Testimonials</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#Partners">Partners</a>
+            <li class="chang nav-item">
+                <a class="chang nav-link" id="nav_partners" href="#Partners">Partners</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#Contact">Contact us</a>
+            <li class="chang nav-item">
+                <a class="chang nav-link" id="nav_contact" href="#Contact">Contact us</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#Arabic">العربيه</a>
+            <li class="chang nav-item">
+                <a class="arbic chang nav-link" href="#Arabic" onclick="setLanguage('ar')">العربيه</a>
+                <a class="en chang nav-link" href="#" onclick="setLanguage('en')">En</a>
             </li>
             </ul>
         </div>
@@ -65,211 +66,211 @@
     <!-- end nav -->
     <section style=" -webkit-backface-visibility: visible; backface-visibility: visible; overflow-y: hidden; overflow-x: hidden;">
         <!-- start header -->
-        <div class="header" id="Home">
-            <div class="container">
-            <div class="head">
+        <div class="chang header" id="Home">
+            <div class="chang container">
+            <div class="chang head">
                 <div>
-                <span>Veyolo</span>
-                <h2>Vehicle You Love</h2>
+                <span id="header_span">Veyolo</span>
+                <h2 id="hesder_h2">Vehicle You Love</h2>
                 </div>
-                <a href="#Pricing" class="Register">Register Now!</a>
+                <a href="#Pricing" id="header_a" class="chang Register">Register Now!</a>
             </div>
             </div>
         </div>
         <!-- end header -->
         <!-- start about -->
-        <div class="about" id="About">
-            <div class="container">
-            <div class="row">
-                <div class="col-xl-5 col-md-5 col-sm-12 aboutImg">
-                    <div class="one"></div>
+        <div class="chang about" id="About">
+            <div class="chang container">
+            <div class="chang row">
+                <div class="chang col-xl-5 col-md-5 col-sm-12 aboutImg">
+                    <div class="chang one"></div>
                     <img src="img/aboutus.png" alt="" />
-                    <div class="one"></div>
+                    <div class="chang one"></div>
                 </div>
-                <div class="col-xl-7 col-md-7 col-sm-12">
-                <h1>Get to</h1>
-                <h2 class="h1">Know Us</h2>
-                <p>
-                An application specially designed to help the owners of garages to organize all financial transactions and the entire rental process that takes place between the tenant and the tenant from him.also it analysis the cost and revenue for your garage with a printable documents .it also includes an e-contract thats spiecally designed for garages to grant its rights.
-                <br><br>
-                Veyolo is designed by ViewPlus to help and solve garages to optimise their work flow and car renting process
-                </p>
+                <div class="chang col-xl-7 col-md-7 col-sm-12">
+                    <h1 id="about_h1">Get to</h1>
+                    <h2 class="chang h1" id="about_h2">Know Us</h2>
+                    <p id="about_p">
+                    An application specially designed to help the owners of garages to organize all financial transactions and the entire rental process that takes place between the tenant and the tenant from him.also it analysis the cost and revenue for your garage with a printable documents .it also includes an e-contract thats spiecally designed for garages to grant its rights.
+                    <br><br>
+                    Veyolo is designed by ViewPlus to help and solve garages to optimise their work flow and car renting process
+                    </p>
                 </div>
             </div>
             </div>
         </div>
         <!-- end about -->
         <!-- start why -->
-        <div class="why" id="Why">
-            <div class="container">
+        <div class="chang why" id="Why">
+            <div class="chang container">
                 <div>
-                    <h1>WHY</h1>
-                    <h2>CHOOSE</h2>
-                    <H3>VEYOLO</H3>
-                    <p>Specially designed to help garages owners.</p>
+                    <h1 id="why_h1">WHY</h1>
+                    <h2 id="why_h2">CHOOSE</h2>
+                    <h3 id="why_h3">VEYOLO</h3>
+                    <p id="why_p1">Specially designed to help garages owners.</p>
                 </div>
-                <div class="row">
-                    <div class="col-xl-3 col-md-6 col-sm-12 porta">
+                <div class="chang row">
+                    <div class="chang col-xl-3 col-md-6 col-sm-12 porta">
                         <img src="img/vectorone.svg" alt="">
-                        <h5>Rents & E-contracts</h5>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+                        <h5 id="why_h5_1">Rents & E-contracts</h5>
+                        <p id="why_p2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
                     </div>
-                    <div class="col-xl-3 col-md-6 col-sm-12 porta">
+                    <div class="chang col-xl-3 col-md-6 col-sm-12 porta">
                         <img src="img/vectorone.svg" alt="">
-                        <h5>Cost and revenue analysis</h5>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+                        <h5 id="why_h5_2">Cost and revenue analysis</h5>
+                        <p id="why_p3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
                     </div>
-                    <div class="col-xl-3 col-md-6 col-sm-12 porta">
+                    <div class="chang col-xl-3 col-md-6 col-sm-12 porta">
                         <img src="img/vectorone.svg" alt="">
-                        <h5>Car owner's & employees profile</h5>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+                        <h5 id="why_h5_3">Car owner's & employees profile</h5>
+                        <p id="why_p4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
                     </div>
-                    <div class="col-xl-3 col-md-6 col-sm-12 porta">
+                    <div class="chang col-xl-3 col-md-6 col-sm-12 porta">
                         <img src="img/vectorone.svg" alt="">
-                        <h5>History & printable documents</h5>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+                        <h5 id="why_h5_4">History & printable documents</h5>
+                        <p id="why_p5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- end why -->
         <!-- start pricing -->
-        <div class="pricing" id="Pricing">
-            <div class="container">
-                <h1>VEYOLO</h1>
-                <h2>PRICING</h2>
-                <div class="row">
-                    <div class="col-xl-3 col-md-6 col-sm-12 porta">
+        <div class="chang pricing" id="Pricing">
+            <div class="chang container">
+                <h1 id="pricing_h1">VEYOLO</h1>
+                <h2 id="pricing_h2">PRICING</h2>
+                <div class="chang row">
+                    <div class="chang col-xl-3 col-md-6 col-sm-12 porta">
                         <div>
-                        <h5>Free</h5>
-                        <div><span>$100</span>/year</div>
-                        <div class="icon">
+                        <h5 id="pricing_h5_1">Free</h5>
+                        <div id="pricing_span"><span>$100</span>/year</div>
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Lacinia gravida</p>
+                            <p id="pricing_p1">Lacinia gravida</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Ligula lectus suspendisse</p>
+                            <p id="pricing_p2">Ligula lectus suspendisse</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Bibendum odio lobortis</p>
+                            <p id="pricing_p3">Bibendum odio lobortis</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Gravida lacus quam</p>
+                            <p id="pricing_p4">Gravida lacus quam</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Sit amet</p>
+                            <p id="pricing-p5">Sit amet</p>
                         </div>
                         </div>
-                        <a href="#!" class="Register" data-toggle="modal" data-target="#exampleModal" id="openModal">Register Now!</a>
+                        <a href="#!" class="chang Register" data-toggle="modal" data-target="#exampleModal" id="openModal">Register Now!</a>
                     </div>
-                    <div class="col-xl-3 col-md-6 col-sm-12 porta">
+                    <div class="chang col-xl-3 col-md-6 col-sm-12 porta">
                         <div>
-                        <h5>Basic</h5>
-                        <div><span>$200</span>/year</div>
-                        <div class="icon">
+                        <h5 id="pricing_h5_2">Basic</h5>
+                        <div id="pricing_span_1"><span>$200</span>/year</div>
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Lacinia gravida</p>
+                            <p id="pricing_p6">Lacinia gravida</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Ligula lectus suspendisse</p>
+                            <p id="pricing_p7">Ligula lectus suspendisse</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Bibendum odio lobortis</p>
+                            <p id="pricing_p8">Bibendum odio lobortis</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Gravida lacus quam</p>
+                            <p id="pricing_p9">Gravida lacus quam</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Rhoncus bibendum</p>
+                            <p id="pricing_p10">Rhoncus bibendum</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Interdum consequat vehicula</p>
+                            <p id="pricing_p11">Interdum consequat vehicula</p>
                         </div>
                         </div>
-                        <a href="#!" class="Register" data-toggle="modal" data-target="#exampleModal" id="openModal">Register Now!</a>
+                        <a href="#!" class="chang Register" data-toggle="modal" data-target="#exampleModal" id="openModal">Register Now!</a>
                     </div>
-                    <div class="col-xl-3 col-md-6 col-sm-12 porta">
+                    <div class="chang col-xl-3 col-md-6 col-sm-12 porta">
                         <div>
-                        <h5>Vip</h5>
-                        <div><span>$400</span>/year</div>
-                        <div class="icon">
+                        <h5 id="pricing_h5_3">Vip</h5>
+                        <div id="pricing_span_2"><span>$400</span>/year</div>
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Lacinia gravida</p>
+                            <p id="pricing_p12">Lacinia gravida</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Ligula lectus suspendisse</p>
+                            <p id="pricing_p13">Ligula lectus suspendisse</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Bibendum odio lobortis</p>
+                            <p id="pricing_p14">Bibendum odio lobortis</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Gravida lacus quam</p>
+                            <p id="pricing_p15">Gravida lacus quam</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Nisi orci sodales</p>
+                            <p id="pricing_p16">Nisi orci sodales</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Est proin gravida</p>
+                            <p id="pricing_p17">Est proin gravida</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Ultrices enim</p>
+                            <p id="pricing_p18">Ultrices enim</p>
                         </div>
                         </div>
-                        <a href="#!" class="Register" data-toggle="modal" data-target="#exampleModal" id="openModal">Register Now!</a>
+                        <a href="#!" class="chang Register" data-toggle="modal" data-target="#exampleModal" id="openModal">Register Now!</a>
                     </div>
-                    <div class="col-xl-3 col-md-6 col-sm-12 porta">
+                    <div class="chang col-xl-3 col-md-6 col-sm-12 porta">
                         <div>
-                        <h5>Unlimited</h5>
-                        <div><span>$1000</span>/year</div>
-                        <div class="icon">
+                        <h5 id="pricing_h5_4">Unlimited</h5>
+                        <div id="pricing_span_3"><span>$1000</span>/year</div>
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Lacinia gravida</p>
+                            <p id="pricing_p19">Lacinia gravida</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Ligula lectus suspendisse</p>
+                            <p id="pricing_p20">Ligula lectus suspendisse</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Bibendum odio lobortis</p>
+                            <p id="pricing_p21">Bibendum odio lobortis</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Gravida lacus quam</p>
+                            <p id="pricing_p22">Gravida lacus quam</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Orci dolor</p>
+                            <p id="pricing_p23">Orci dolor</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Vulputate eget sodales</p>
+                            <p id="pricing_p24">Vulputate eget sodales</p>
                         </div>
-                        <div class="icon">
+                        <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
-                            <p>Lorem vulputate</p>
+                            <p id="pricing_p25">Lorem vulputate</p>
                         </div>
-                        <!-- <div class="icon">
+                        <!-- <div class="chang icon">
                             <img src="img/check-circle-solid.svg">
                             <p>Nisi ornare</p>
                         </div> -->
                         </div>
-                        <a href="#!" class="Register" data-toggle="modal" data-target="#exampleModal" id="openModal">Register Now!</a>
+                        <a href="#!" class="chang Register" data-toggle="modal" data-target="#exampleModal" id="openModal">Register Now!</a>
                     </div>
                 </div>
             </div>
@@ -387,16 +388,16 @@
         </div> -->
         <!-- end Register model -->
         <!-- start album -->
-        <div class="album" id="Album">
+        <div class=" album" id="Album">
             <div class="container">
-                <div class="porta">
-                    <h1>OUR</h1>
-                    <h2>ALBUM</h2>
-                    <p>Like everything else, albums still matter.</p>
+                <div class="chang porta">
+                    <h1 id="album_h1">OUR</h1>
+                    <h2 id="album_h2">ALBUM</h2>
+                    <p id="album_p">Like everything else, albums still matter.</p>
                 </div>
-                <div class="button">
-                    <a href="#!" class="img-1"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><defs><style>.a,.d{fill:none;}.a{stroke:#5f5f5f;}.b{fill:#5f5f5f;}.c{stroke:none;}</style></defs><g transform="translate(-55 -2879)"><g class="a" transform="translate(55 2879)"><circle class="c" cx="20" cy="20" r="20"/><circle class="d" cx="20" cy="20" r="19.5"/></g><path class="b" d="M9.2,38.695,8.4,37.9a.854.854,0,0,0-1.211,0L.252,44.84a.854.854,0,0,0,0,1.211l6.942,6.942a.854.854,0,0,0,1.211,0L9.2,52.2a.858.858,0,0,0-.014-1.225l-4.3-4.1H15.143A.855.855,0,0,0,16,46.019V44.876a.855.855,0,0,0-.857-.857H4.88l4.3-4.1A.852.852,0,0,0,9.2,38.695Z" transform="translate(67 2853.409)"/></g></svg></a>
-                    <a href="#!" class="img-2"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><defs><style>.a,.d{fill:none;}.a{stroke:#ff7600;}.b{fill:#ff7600;}.c{stroke:none;}</style></defs><g transform="translate(-121 -2879)"><g class="a" transform="translate(121 2879)"><circle class="c" cx="20" cy="20" r="20"/><circle class="d" cx="20" cy="20" r="19.5"/></g><path class="b" d="M6.8,38.695,7.6,37.9a.854.854,0,0,1,1.211,0l6.942,6.939a.854.854,0,0,1,0,1.211L8.806,52.993a.854.854,0,0,1-1.211,0L6.8,52.2a.858.858,0,0,1,.014-1.225l4.3-4.1H.857A.855.855,0,0,1,0,46.019V44.876a.855.855,0,0,1,.857-.857H11.12l-4.3-4.1A.852.852,0,0,1,6.8,38.695Z" transform="translate(133 2853.409)"/></g></svg></a>
+                <div class=" button">
+                    <a href="#!" class=" img-1"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><defs><style>.a,.d{fill:none;}.a{stroke:#5f5f5f;}.b{fill:#5f5f5f;}.c{stroke:none;}</style></defs><g transform="translate(-55 -2879)"><g class="a" transform="translate(55 2879)"><circle class="c" cx="20" cy="20" r="20"/><circle class="d" cx="20" cy="20" r="19.5"/></g><path class="b" d="M9.2,38.695,8.4,37.9a.854.854,0,0,0-1.211,0L.252,44.84a.854.854,0,0,0,0,1.211l6.942,6.942a.854.854,0,0,0,1.211,0L9.2,52.2a.858.858,0,0,0-.014-1.225l-4.3-4.1H15.143A.855.855,0,0,0,16,46.019V44.876a.855.855,0,0,0-.857-.857H4.88l4.3-4.1A.852.852,0,0,0,9.2,38.695Z" transform="translate(67 2853.409)"/></g></svg></a>
+                    <a href="#!" class=" img-2"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><defs><style>.a,.d{fill:none;}.a{stroke:#ff7600;}.b{fill:#ff7600;}.c{stroke:none;}</style></defs><g transform="translate(-121 -2879)"><g class="a" transform="translate(121 2879)"><circle class="c" cx="20" cy="20" r="20"/><circle class="d" cx="20" cy="20" r="19.5"/></g><path class="b" d="M6.8,38.695,7.6,37.9a.854.854,0,0,1,1.211,0l6.942,6.939a.854.854,0,0,1,0,1.211L8.806,52.993a.854.854,0,0,1-1.211,0L6.8,52.2a.858.858,0,0,1,.014-1.225l4.3-4.1H.857A.855.855,0,0,1,0,46.019V44.876a.855.855,0,0,1,.857-.857H11.12l-4.3-4.1A.852.852,0,0,1,6.8,38.695Z" transform="translate(133 2853.409)"/></g></svg></a>
                 </div>
                 <!-- Swiper -->
                 <div class="swiper-container swiper-1">
@@ -417,12 +418,12 @@
         </div>
         <!-- end album -->
         <!-- start Testimonials -->
-        <div class="Testimonials" id="Testimonials">
+        <div class=" Testimonials" id="Testimonials">
             <div class="container">
-                <div class="porta">
-                    <h1>CLIENTS</h1>
-                    <h2>TESTIMONIALS</h2>
-                    <p>We're building a family not just customers.</p>
+                <div class="chang porta">
+                    <h1 id="testimonials_h1">CLIENTS</h1>
+                    <h2 id="testimonials_h2">TESTIMONIALS</h2>
+                    <p id="testimonials_p">We're building a family not just customers.</p>
                 </div>
                 <div class="buttom">
                     <a href="#!" class="img-3"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><defs><style>.a,.d{fill:none;}.a{stroke:#5f5f5f;}.b{fill:#5f5f5f;}.c{stroke:none;}</style></defs><g transform="translate(-55 -2879)"><g class="a" transform="translate(55 2879)"><circle class="c" cx="20" cy="20" r="20"/><circle class="d" cx="20" cy="20" r="19.5"/></g><path class="b" d="M9.2,38.695,8.4,37.9a.854.854,0,0,0-1.211,0L.252,44.84a.854.854,0,0,0,0,1.211l6.942,6.942a.854.854,0,0,0,1.211,0L9.2,52.2a.858.858,0,0,0-.014-1.225l-4.3-4.1H15.143A.855.855,0,0,0,16,46.019V44.876a.855.855,0,0,0-.857-.857H4.88l4.3-4.1A.852.852,0,0,0,9.2,38.695Z" transform="translate(67 2853.409)"/></g></svg></a>
@@ -434,32 +435,32 @@
                     <div class="swiper-slide">
                         <div class="icon">
                             <img src="img/testimonials-icon.svg" alt="" class="icon-1">
-                            <h5>Imperdiet mauris</h5>
-                            <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by.</p>
+                            <h5 id="testimonials_h5">Imperdiet mauris</h5>
+                            <p id="testimonials_p1">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by.</p>
                             <img src="img/riccardo-pelati-_-Cg7vTw3bs-unsplash@2x.png" alt="" class="icon-2">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="icon">
                             <img src="img/testimonials-icon.svg" alt="" class="icon-1">
-                            <h5>Imperdiet mauris</h5>
-                            <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by.</p>
+                            <h5 id="testimonials_h5_1">Imperdiet mauris</h5>
+                            <p id="testimonials_p2">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by.</p>
                             <img src="img/robert-tudor-ESn91qXk6kI-unsplash.png" alt="" class="icon-2">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="icon">
                             <img src="img/testimonials-icon.svg" alt="" class="icon-1">
-                            <h5>Imperdiet mauris</h5>
-                            <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by.</p>
+                            <h5 id="testimonials_h5_2">Imperdiet mauris</h5>
+                            <p id="testimonials_p3">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by.</p>
                             <img src="img/yeshi-kangrang-wTD1-_u8x1g-unsplash.png" alt="" class="icon-2">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="icon">
                             <img src="img/testimonials-icon.svg" alt="" class="icon-1">
-                            <h5>Imperdiet mauris</h5>
-                            <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by.</p>
+                            <h5 id="testimonials_h5_3">Imperdiet mauris</h5>
+                            <p id="testimonials-p4">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by.</p>
                             <img src="img/olav-tvedt--oVaYMgBMbs-unsplash@2x.png" alt="" class="icon-2">
                         </div>
                     </div>
@@ -501,12 +502,12 @@
         </div>
         <!-- end Testimonials -->
         <!-- start Partners -->
-        <div class="Partners" id="Partners">
+        <div class="chang Partners" id="Partners">
             <div class="container">
                 <div class="porta">
-                    <h1>OUR</h1>
-                    <h2>CLIENTS</h2>
-                    <p>Let's walk an extra mile together!</p>
+                    <h1 id="partners_h1">OUR</h1>
+                    <h2 id="partners_h2">CLIENTS</h2>
+                    <p id="partners_p">Let's walk an extra mile together!</p>
                 </div>
                 <div class="row">
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-6 partnres-img"><img src="img/logoone.svg" alt=""></div>
@@ -522,20 +523,20 @@
         </div>
         <!-- end Partners -->
         <!-- start Contact -->
-        <div class="Contact" id="Contact">
-            <div class="container">
-                <div class="pop-3">
-                    <div class="">
-                        <div class="porta">
-                            <h1>CONTACT US</h1>
-                            <p class="p-1">Have a Question? Contact us now<br> We are glad to help you anytime at any moment</p>
+        <div class="chang Contact" id="Contact">
+            <div class="chang container">
+                <div class="chang pop-3">
+                    <div class="chang ">
+                        <div class="chang porta">
+                            <h1 id="Contact_h1">CONTACT US</h1>
+                            <p id="contact_p" class="p-1">Have a Question? Contact us now<br> We are glad to help you anytime at any moment</p>
                         </div>
                         <form method="GET">
-                        <input type="email" name="email" placeholder="Your Email" required />
-                        <textarea rows="3" placeholder="Message"></textarea>
+                        <input id="contact_email" type="email" name="email" placeholder="Your Email" required />
+                        <textarea id="contact_textarea" rows="3" placeholder="Message"></textarea>
                         <input type="submit" value="Apply Now " class="send" />
                         </form>
-                        <h3>FOLLOW US</h3>
+                        <h3 id="contact_h3">FOLLOW US</h3>
                         <ul>
                             <li><a href="#!"><img src="img/logo-linkedin.svg" alt=""></a></li>
                             <li><a href="#!"><img src="img/logo-facebook.svg" alt=""></a></li>
@@ -544,8 +545,8 @@
                             <li><a href="#!"><img src="img/logo-snapchat.svg" alt=""></a></li>
                         </ul>
                     </div>
-                    <div class="">
-                        <p class="copy">Copyright ©2019 All rights reserved<br>Powered by ViewPlus</p>
+                    <div class="chang ">
+                        <p id="contact_copy" class="copy">Copyright ©2019 All rights reserved<br>Powered by ViewPlus</p>
                     </div>
                 </div>
             </div>
@@ -571,28 +572,28 @@
                                                 <div class="col-md-8">
                                                     <div class="row">
                                                         <div class="col-md-12 links">
-                                                        <a class="active1">Personal & company Info</a>
-                                                        <a >Subscription & Payment</a>
+                                                        <a id="model_button_1" class="active1">Personal & company Info</a>
+                                                        <a id="model_button_2" >Subscription & Payment</a>
                                                         </div>
-                                                        <div class="col-md-12"><h5>Personal Information</h5></div>
-                                                        <div class="col-md-6 col-sm-12 pad"><input type="text" placeholder="Full Name"></div>
+                                                        <div class="col-md-12"><h5 id="model_input_h5_1">Personal Information</h5></div>
+                                                        <div class="col-md-6 col-sm-12 pad"><input id="model_input_1" type="text" placeholder="Full Name"></div>
                                                         <div class="col-md-2 col-sm-5 pad">
                                                         <select class="custom-select" id="validationCustom04" >
-                                                            <option selected disabled value="+02">+02</option>
+                                                            <option id="model_input_2" selected disabled value="+02">+02</option>
                                                             <option>+22</option>
                                                             <option>+65</option>
                                                             <option>+79</option>
                                                         </select>
                                                         </div>
-                                                        <div class="col-md-4 col-sm-7 pad"><input type="phone" placeholder="Phone Number"></div>
-                                                        <div class="col-md-6 col-sm-12 pad"><input type="text" placeholder="Email"></div>
+                                                        <div class="col-md-4 col-sm-7 pad"><input id="model_input_3" type="phone" placeholder="Phone Number"></div>
+                                                        <div class="col-md-6 col-sm-12 pad"><input id="model_input_4" type="text" placeholder="Email"></div>
                                                         <div class="col-md-6 col-sm-12 pad"></div>
-                                                        <div class="col-md-12 col-sm-12 pad"><h5>Company Information</h5></div>
-                                                        <div class="col-md-6 pad"><input type="text" placeholder="Company Information"></div>
-                                                        <div class="col-md-6 pad"><input type="text" placeholder="Company Email"></div>
+                                                        <div class="col-md-12 col-sm-12 pad"><h5 id="model_input_h5_2">Company Information</h5></div>
+                                                        <div class="col-md-6 pad"><input id="model_input_5" type="text" placeholder="Company Information"></div>
+                                                        <div class="col-md-6 pad"><input id="model_input_6" type="text" placeholder="Company Email"></div>
                                                         <div class="col-md-3 pad">
                                                             <select class="custom-select" id="validationCustom04" >
-                                                                <option selected disabled value="+02">Country</option>
+                                                                <option id="model_input_7" selected disabled value="+02">Country</option>
                                                                 <option>Iran</option>
                                                                 <option>Sudan</option>
                                                                 <option>Newsland</option>
@@ -600,7 +601,7 @@
                                                         </div>
                                                         <div class="col-md-3 pad">
                                                             <select class="custom-select" id="validationCustom04" >
-                                                            <option selected disabled value="+02">Province</option>
+                                                            <option id="model_input_8" selected disabled value="+02">Province</option>
                                                             <option>+22</option>
                                                             <option>+65</option>
                                                             <option>+79</option>
@@ -608,14 +609,14 @@
                                                         </div>
                                                         <div class="col-md-3 pad">
                                                             <select class="custom-select" id="validationCustom04" >
-                                                            <option selected disabled value="+02">City</option>
+                                                            <option id="model_input_9" selected disabled value="+02">City</option>
                                                             <option>+22</option>
                                                             <option>+65</option>
                                                             <option>+79</option>
                                                             </select>
                                                         </div>
-                                                        <div class="col-md-3 pad"><input type="phone" placeholder="ZIP Code"></div>
-                                                        <div class="col-md-6 pad"><input type="text" placeholder="Address"></div>
+                                                        <div class="col-md-3 pad"><input id="model_input_10" type="phone" placeholder="ZIP Code"></div>
+                                                        <div class="col-md-6 pad"><input id="model_input_11" type="text" placeholder="Address"></div>
                                                         <div class="col-md-6 pad"></div>
                                                         <div class="col-md-2 pad">
                                                             <select class="custom-select" id="validationCustom04" >
@@ -625,7 +626,7 @@
                                                                 <option>+79</option>
                                                             </select>
                                                         </div>
-                                                        <div class="col-md-4 pad"><input type="phone" placeholder="Phone Number"></div>
+                                                        <div class="col-md-4 pad"><input id="model_input_13" type="phone" placeholder="Phone Number"></div>
                                                         <div class="col-md-2 pad">
                                                             <select class="custom-select" id="validationCustom04" >
                                                                 <option selected disabled value="+02">+02</option>
@@ -634,38 +635,38 @@
                                                                 <option>+79</option>
                                                             </select>
                                                         </div>
-                                                        <div class="col-md-4 pad"><input type="phone" placeholder="land Number"></div>
-                                                        <div class="col-md-6 pad add"><a href="#!" class="add1 block2">+ add another</a></div>
-                                                        <div class="col-md-6 pad add"><a href="#!" class="add2">+ add another</a></div>
+                                                        <div class="col-md-4 pad"><input id="model_input_15" type="phone" placeholder="land Number"></div>
+                                                        <div class="col-md-6 pad add"><a id="model_add_1" href="#!" class="add1 block2">+ add another</a></div>
+                                                        <div class="col-md-6 pad add"><a id="model_add_2" href="#!" class="add2">+ add another</a></div>
                                                         <div class="col-md-12 pad">
-                                                            <div class="col-md-12 pad"><h4>Company Files</h4></div>
+                                                            <div class="col-md-12 pad"><h4 id="model_h5_3">Company Files</h4></div>
                                                             <div class="col-md-12 file pad">
-                                                                <h5>Business Registration</h5>
+                                                                <h5 id="model_h4_2">Business Registration</h5>
                                                                 <input type="file" class="form-control" accept="image/x-png,image/png,image/jpeg">
                                                                 <label for="file-upload" class="custom-file-upload">
                                                                     <img src="img/plus-solid.svg" alt="">
-                                                                    <P>Upload Images ( Uploaded images SHOULD be either .png or .jpg</P>
+                                                                    <P id="model_p_1">Upload Images ( Uploaded images SHOULD be either .png or .jpg</P>
                                                                 </label>
                                                             </div>
                                                             <div class="col-md-12 file pad">
-                                                                    <h5>Business Registration</h5>
+                                                                    <h5 id="model_h4_1">Business Registration</h5>
                                                                     <input type="file" class="form-control" accept="image/x-png,image/png,image/jpeg">
                                                                     <label for="file-upload" class="custom-file-upload">
                                                                         <img src="img/plus-solid.svg" alt="">
-                                                                        <P>Upload Images ( Uploaded images SHOULD be either .png or .jpg</P>
+                                                                        <P id="model_p_2">Upload Images ( Uploaded images SHOULD be either .png or .jpg</P>
                                                                     </label>
                                                             </div>
                                                             <div class="col-md-12 file pad">
-                                                                    <h5>Business Registration</h5>
+                                                                    <h5 id="model_h4_3">Business Registration</h5>
                                                                     <input type="file" class="form-control" accept="image/x-png,image/png,image/jpeg">
                                                                     <label for="file-upload" class="custom-file-upload">
                                                                         <img src="img/plus-solid.svg" alt="">
-                                                                        <P>Upload Images ( Uploaded images SHOULD be either .png or .jpg</P>
+                                                                        <P id="model_p_3">Upload Images ( Uploaded images SHOULD be either .png or .jpg</P>
                                                                     </label>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12 pad links2">
-                                                            <a href="#!" data-dismiss="modal" aria-label="Close">Cancel</a>
+                                                            <a id="model_button_3" href="#!" data-dismiss="modal" aria-label="Close">Cancel</a>
                                                             <a class="active2" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Next</a>
                                                         </div>
                                                     </div>
@@ -673,8 +674,8 @@
                                                 <div class="col-md-2"></div>
                                             </div>
                                             <div class="copy">
-                                                <p class="power">Copyright ©2019 All rights reserved</p>
-                                                <p class="power">Powered by <a href="#!" class="plus">ViewPlus</a></p>
+                                                <p id="model_copy_p_1" class="power">Copyright ©2019 All rights reserved</p>
+                                                <p id="model_copy_p_2" class="power">Powered by <a href="#!" class="plus">ViewPlus</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -692,50 +693,50 @@
                                                         <a >Personal & company Info</a>
                                                         <a class="active1">Subscription & Payment</a>
                                                     </div>
-                                                    <div class="col-md-12 pad "><h5>Subscription Information</h5></div>
+                                                    <div class="col-md-12 pad "><h5 id="model_h5_4">Subscription Information</h5></div>
                                                     <div class="col-md-6 pad" >
                                                         <select class="custom-select" id="validationCustom04" >
-                                                            <option selected disabled value="+02">+02</option>
-                                                            <option>+22</option>
-                                                            <option>+65</option>
-                                                            <option>+79</option>
+                                                            <option id="model_input_16" selected disabled value="+02">Tristique vel</option>
+                                                            <option>Tristique vel</option>
+                                                            <option>Tristique vel</option>
+                                                            <option>Tristique vel</option>
                                                         </select>
                                                     </div>
                                                     <div class="col-md-6 pad ">
                                                         <select class="custom-select" id="validationCustom04" >
-                                                            <option selected disabled value="+02">+02</option>
-                                                            <option>+22</option>
-                                                            <option>+65</option>
-                                                            <option>+79</option>
+                                                            <option id="model_input_17" selected disabled value="+02">Yearly - EGP 1,000/yr</option>
+                                                            <option>Yearly - EGP 1,000/yr</option>
+                                                            <option>Yearly - EGP 1,000/yr</option>
+                                                            <option>Yearly - EGP 1,000/yr</option>
                                                         </select>
                                                     </div>
-                                                    <div class="col-md-12 pad "><h5>Payment Information</h5></div>
+                                                    <div class="col-md-12 pad "><h5 id="model_h5_5">Payment Information</h5></div>
                                                     <div class="col-md-12 pad  show">
                                                         <div class="radio">
                                                             <input type="radio" id="male" name="gender" value="male" style="width: auto;" checked>
                                                             <span>Credit card</span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-6  pad hide1"><input type="text" placeholder="Name on Card"></div>
-                                                    <div class="col-md-6  pad hide1"><input type="phone" placeholder="Card Number"></div>
+                                                    <div class="col-md-6  pad hide1"><input id="model_input_18" type="text" placeholder="Name on Card"></div>
+                                                    <div class="col-md-6  pad hide1"><input id="model_input_19" type="phone" placeholder="Card Number"></div>
                                                     <div class="col-md-12 pad  hide1"></div>
-                                                    <div class="col-md-3  pad hide1">
+                                                    <div class="col-md-3 pad hide1">
                                                         <select class="custom-select" id="validationCustom04" >
-                                                            <option selected disabled value="+02">+02</option>
-                                                            <option>+22</option>
-                                                            <option>+65</option>
-                                                            <option>+79</option>
+                                                            <option id="model_input_20" selected disabled value="+02">Expiry Month</option>
+                                                            <option>Expiry Month</option>
+                                                            <option>Expiry Month</option>
+                                                            <option>Expiry Month</option>
                                                         </select>
                                                     </div>
-                                                    <div class="col-md-3  pad hide1">
+                                                    <div class="col-md-3 pad hide1">
                                                         <select class="custom-select" id="validationCustom04" >
-                                                            <option selected disabled value="+02">+02</option>
-                                                            <option>+22</option>
-                                                            <option>+65</option>
-                                                            <option>+79</option>
+                                                            <option id="model_input_21" selected disabled value="+02">Expiry Year</option>
+                                                            <option>Expiry Year</option>
+                                                            <option>Expiry Year</option>
+                                                            <option>Expiry Year</option>
                                                         </select>
                                                     </div>
-                                                    <div class="col-md-6  pad hide1"><input type="text" placeholder="Cvv"></div>
+                                                    <div class="col-md-6 pad hide1"><input id="model_input_22" type="text" placeholder="Cvv"></div>
                                                     <div class="col-md-12 pad ">
                                                         <div class="radio">
                                                             <input type="radio" id="male" name="gender" value="male" style="width: auto;" class="show" >
@@ -764,10 +765,10 @@
                                             </div>
                                             <div class="thank">
                                                 <img src="img/check-circle-regular.svg" alt="">
-                                                <h1>THANK YOU!!</h1>
-                                                <p>YOU HAVE SUCCESSFULLY SUBSCRIBED IN VEYOLO</p>
-                                                <span>Please check your email for further instruction on system activation. You have 48 hours to pay cash to fully activate Veyolo system.</span>
-                                                <a href="index.html" class="back">Back to home</a>
+                                                <h1 id="model_thank">THANK YOU!!</h1>
+                                                <p id="model_span">YOU HAVE SUCCESSFULLY SUBSCRIBED IN VEYOLO</p>
+                                                <span id="model_p">Please check your email for further instruction on system activation. You have 48 hours to pay cash to fully activate Veyolo system.</span>
+                                                <a id="model_button_7" href="index.html" class="back">Back to home</a>
                                             </div>
                                             <div class="copy">
                                                 <p class="power">Copyright ©2019 All rights reserved</p>
@@ -783,9 +784,10 @@
             </div>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" ></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous" ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="custome.js"></script>
   </body>
 </html>
