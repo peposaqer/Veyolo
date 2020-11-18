@@ -128,6 +128,10 @@ $(window).scroll(function () {
   $(".navbar-brand").children("svg").find(".b").css("fill", "#fff");
 });
 
+  $(".navbar-brand").children("svg").find(".a").css("fill", "#fff");
+  $(".navbar-brand").children("svg").find(".a").css("stroke", "none");
+  $(".navbar-brand").children("svg").find(".b").css("fill", "#fff");
+
 // Active / Deactive arrows btns
 $("a").on("click", function () {
   if (
