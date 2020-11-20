@@ -267,20 +267,6 @@ $(".en").on("click", englishLang);
 $(".arbic").on("click", arabicLang);
 
 
-$(".en").hide();
-
-//show more button
-// $(".arbic").click(function () {
-//   $(".arbic").hide();
-//   $(".en").show();
-// });
-
-//show more button
-// $(".en").click(function () {
-//   $(".en").hide();
-//   $(".arbic").show();
-// });
-
 
 function arabicLang() {
   $(".chang").addClass("right-dir");
@@ -412,10 +398,16 @@ function arabicLang() {
   $("#model_span").text(language.model_span);
   $("#model_thank").text(language.model_thank);
   $("#model_p").text(language.model_p);
+  $("#pricing_span_5").text(language.pricing_span_5);
+  $("#pricing_span_6").text(language.pricing_span_6);
+  $("#pricing_span_7").text(language.pricing_span_7);
+  $("#pricing_span_8").text(language.pricing_span_8);
   $("#model_button_7").text(language.model_button_7);
   $(".Contact ul").css({ "margin-left": "5rem" });
   $(".why .porta").css({ "margin-right": "2rem" });
   $(".pricing .porta").css({ "margin-right": "2rem" });
+    $(".arbic").hide();
+    $(".en").show();
 
   // Function To Dismiss Progress Ring
   // dismissProgress();
@@ -550,24 +542,17 @@ function englishLang() {
   $("#model_button_6").text(language.model_button_6);
   $("#model_span").text(language.model_span);
   $("#model_thank").text(language.model_thank);
+  $("#pricing_span_5").text(language.pricing_span_5);
+  $("#pricing_span_6").text(language.pricing_span_6);
+  $("#pricing_span_7").text(language.pricing_span_7);
+  $("#pricing_span_8").text(language.pricing_span_8);
   $("#model_p").text(language.model_p);
   $("#model_button_7").text(language.model_button_7);
-
+  $(".en").hide();
+  $(".arbic").show();
 
   // Function To Dismiss Progress Ring
   // dismissProgress();
 }
 
-$(".en").hide();
 
-//show more button
-$(".arbic").click(function () {
-  $(".arbic").hide();
-  $(".en").show();
-});
-
-//show more button
-$(".en").click(function () {
-  $(".en").hide();
-  $(".arbic").show();
-});
