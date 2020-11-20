@@ -404,8 +404,11 @@ function arabicLang() {
   $("#pricing_span_8").text(language.pricing_span_8);
   $("#model_button_7").text(language.model_button_7);
   $(".Contact ul").css({ "margin-left": "5rem" });
-  $(".why .porta").css({ "margin-right": "2rem" });
-  $(".pricing .porta").css({ "margin-right": "2rem" });
+  $(".why .porta").css({ "margin-right": "0px" });
+  $(".pricing .porta .span").css({ "margin-right": "20%" });
+  $(".pricing .porta .span").css({ "margin-left": "0%" });
+  // $(".pricing .porta").css({ "margin-right": "2rem" });
+  $("nav ul").css({ "direction": "ltr" });
     $(".arbic").hide();
     $(".en").show();
 
