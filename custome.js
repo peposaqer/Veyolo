@@ -526,6 +526,7 @@ function englishLang() {
   $("#album_h1").text(language.album_h1);
   $("#album_h2").text(language.album_h2);
   $("#album_p").text(language.album_p);
+  $("#home_tab").text(language.home_tab);
   $("#testimonials_h1").text(language.testimonials_h1);
   $("#testimonials_h2").text(language.testimonials_h2);
   $("#testimonials_p").text(language.testimonials_p);
