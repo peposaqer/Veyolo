@@ -210,11 +210,39 @@ $(document).ready(function () {
   });
 });
 
-$(".block2").click(function () {
-  $("form").append(
-    '<div class="col-md-2 pad"><select class="custom-select" id="validationCustom04" ><option selected disabled value="+02">+02</option><option>+22</option><option>+65</option><option>+79</option></select></div><div class="col-md-4 pad"><input type="phone" placeholder="Phone Number"></div>'
+$("#model_add_2").click(function () {
+  $(".add2").prepend(
+    `<div class="col-md-12 pad flex">
+      <div class="col-md-4 pad">
+          <select class="custom-select" id="validationCustom04" >
+              <option selected disabled value="+02">+02</option>
+              <option>+22</option>
+              <option>+65</option>
+              <option>+79</option>
+          </select>
+      </div>
+      <div class="col-md-8 pad"><input id="model_input_32" type="phone" placeholder="Phone Number"></div>
+  </div>`
   );
 });
+
+
+$("#model_add_1").click(function () {
+  $(".add1").prepend(
+    `<div class="col-md-12 pad flex">
+      <div class="col-md-4 pad">
+          <select class="custom-select" id="validationCustom04" >
+              <option selected disabled value="+02">+02</option>
+              <option>+22</option>
+              <option>+65</option>
+              <option>+79</option>
+          </select>
+      </div>
+      <div class="col-md-8 pad"><input id="model_input_31" type="phone" placeholder="land Number"></div>
+  </div>`
+  );
+});
+
 
 $(".active2").click(function () {
   $(".active2").removeClass("active");
@@ -293,6 +321,8 @@ function arabicLang() {
   $("#why_p2").text(language.why_p2);
   $("#why_h5_2").text(language.why_h5_2);
   $("#why_p3").text(language.why_p3);
+  $("#why_p4").text(language.why_p3);
+  $("#why_p5").text(language.why_p3);
   $("#why_h5_3").text(language.why_h5_3);
   $("#why_h5_4").text(language.why_h5_4);
   $("#pricing_h1").text(language.pricing_h1);
@@ -305,6 +335,9 @@ function arabicLang() {
   $("#pricing_p4").text(language.pricing_p4);
   $("#pricing_p5").text(language.pricing_p5);
   $("#openModal").text(language.openModal);
+  $("#openModal1").text(language.openModal1);
+  $("#openModal2").text(language.openModal2);
+  $("#openModal3").text(language.openModal3);
   $("#pricing_h5_2").text(language.pricing_h5_2 );
   $("#pricing_span_1").text(language.pricing_span_1);
   $("#pricing_p6").text(language.pricing_p6);
@@ -353,6 +386,7 @@ function arabicLang() {
   $("#contact_copy").text(language.contact_copy);  
   $("#contact_email").attr("placeholder", language.contact_email);
   $("#contact_textarea").attr("placeholder", language.contact_textarea);
+  $("#contact_send").attr("value", language.contact_send);
   $("#model_button_1").text(language.model_button_1);
   $("#model_button_2").text(language.model_button_2);
   $("#model_input_h5_1").text(language.model_input_h5_1);
@@ -372,6 +406,8 @@ function arabicLang() {
   $("#model_input_13").attr("placeholder", language.model_input_13);
   $("#model_input_14").attr("placeholder", language.model_input_14);
   $("#model_input_15").attr("placeholder", language.model_input_15);
+  $("#model_input_31").attr("placeholder", language.model_input_31);
+  $("#model_input_32").attr("placeholder", language.model_input_32);
   $("#model_add_1").text(language.model_add_1);
   $("#model_add_2").text(language.model_add_2);
   $("#model_h5_3").text(language.model_h5_3);
@@ -402,6 +438,9 @@ function arabicLang() {
   $("#pricing_span_6").text(language.pricing_span_6);
   $("#pricing_span_7").text(language.pricing_span_7);
   $("#pricing_span_8").text(language.pricing_span_8);
+  $("#profile_tab").text(language.profile_tab);
+  $("#home_tab").text(language.home_tab);
+  $("#contact_tab").text(language.contact_tab);
   $("#model_button_7").text(language.model_button_7);
   $(".Contact ul").css({ "margin-left": "5rem" });
   $(".why .porta").css({ "margin-right": "0px" });
@@ -409,8 +448,9 @@ function arabicLang() {
   $(".pricing .porta .span").css({ "margin-left": "0%" });
   // $(".pricing .porta").css({ "margin-right": "2rem" });
   $("nav ul").css({ "direction": "ltr" });
-    $(".arbic").hide();
-    $(".en").show();
+  $(".pricing .icon img").css({ "margin-left": ".4rem"});
+  $(".arbic").hide();
+  $(".en").show();
 
   // Function To Dismiss Progress Ring
   // dismissProgress();
@@ -441,6 +481,8 @@ function englishLang() {
   $("#why_p2").text(language.why_p2);
   $("#why_h5_2").text(language.why_h5_2);
   $("#why_p3").text(language.why_p3);
+  $("#why_p4").text(language.why_p3);
+  $("#why_p5").text(language.why_p3);
   $("#why_h5_3").text(language.why_h5_3);
   $("#why_h5_4").text(language.why_h5_4);
   $("#pricing_h1").text(language.pricing_h1);
@@ -453,6 +495,9 @@ function englishLang() {
   $("#pricing_p4").text(language.pricing_p4);
   $("#pricing_p5").text(language.pricing_p5);
   $("#openModal").text(language.openModal);
+  $("#openModal1").text(language.openModal1);
+  $("#openModal2").text(language.openModal2);
+  $("#openModal3").text(language.openModal3);
   $("#pricing_h5_2").text(language.pricing_h5_2);
   $("#pricing_span_1").text(language.pricing_span_1);
   $("#pricing_p6").text(language.pricing_p6);
@@ -501,6 +546,7 @@ function englishLang() {
   $("#contact_copy").text(language.contact_copy);
   $("#contact_email").attr("placeholder", language.contact_email);
   $("#contact_textarea").attr("placeholder", language.contact_textarea);
+  $("#contact_send").attr("value", language.contact_send);
   $("#model_button_1").text(language.model_button_1);
   $("#model_button_2").text(language.model_button_2);
   $("#model_input_h5_1").text(language.model_input_h5_1);
@@ -520,6 +566,8 @@ function englishLang() {
   $("#model_input_13").attr("placeholder", language.model_input_13);
   $("#model_input_14").attr("placeholder", language.model_input_14);
   $("#model_input_15").attr("placeholder", language.model_input_15);
+  $("#model_input_31").attr("placeholder", language.model_input_31);
+  $("#model_input_32").attr("placeholder", language.model_input_32);
   $("#model_add_1").text(language.model_add_1);
   $("#model_add_2").text(language.model_add_2);
   $("#model_h5_3").text(language.model_h5_3);
@@ -549,8 +597,11 @@ function englishLang() {
   $("#pricing_span_6").text(language.pricing_span_6);
   $("#pricing_span_7").text(language.pricing_span_7);
   $("#pricing_span_8").text(language.pricing_span_8);
+  $("#profile_tab").text(language.profile_tab);
   $("#model_p").text(language.model_p);
   $("#model_button_7").text(language.model_button_7);
+  $(".pricing .porta .span").css({ "margin-right": "0%" });
+  $(".pricing .porta .span").css({ "margin-left": "20%" });
   $(".en").hide();
   $(".arbic").show();
 

@@ -72,6 +72,12 @@
 
     "openModal": "Register Now!",
 
+    "openModal1": "Register Now!",
+
+    "openModal2": "Register Now!",
+
+    "openModal3": "Register Now!",
+
     "pricing_h5_2": "Basic",
 
     "pricing_span_1": "$200/year",
@@ -83,7 +89,6 @@
     "pricing_span_7": "year",
 
     "pricing_span_8": "year",
-
 
     "pricing_p6": "Lacinia gravida",
 
@@ -174,6 +179,8 @@
     "contact_email": "Your Email",
 
     "contact_textarea": "Message",
+
+    "contact_send": "Apply Now",
 
     "contact_h3": "FOLLOW US",
 
@@ -273,7 +280,13 @@
 
     "model_p": "Please check your email for further instruction on system activation. You have 48 hours to pay cash to fully activate Veyolo system.",
 
-    "model_button_7": "Back to Home"
+    "model_button_7": "Back to Home",
+
+    "profile_tab": "Next",
+
+    "model_input_31": "land number",
+
+    "model_input_32": "phone number"
 
 
 }
