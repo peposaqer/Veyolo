@@ -1029,12 +1029,12 @@ h4 {
   }
 
   .Contact form input {
-    padding: 2%;
+    padding: 3%;
     width: 90%;
   }
 
   .Contact form textarea {
-    padding: 2%;
+    padding: 3%;
     width: 90%;
     height: 4rem;
   }
@@ -1044,7 +1044,7 @@ h4 {
   }
 
   .Contact .send {
-    width: 90%;
+    width: 75%;
   }
   
   .links2 a {
@@ -1237,17 +1237,17 @@ h4 {
   }
 
   .Contact form input {
-    padding: 2%;
+    padding: 3%;
     width: 90%;
   }
 
   .Contact form textarea {
-    padding: 2%;
+    padding: 3%;
     width: 90%;
   }
 
   .Contact .send {
-    width: 90%;
+    width: 75%;
     height: 48px;
   }
 
