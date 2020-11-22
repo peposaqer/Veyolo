@@ -845,6 +845,7 @@ h4 {
   flex-flow: column;
   justify-content: center;
   align-self: center;
+  align-items: center;
   color: #fff;
 }
 
