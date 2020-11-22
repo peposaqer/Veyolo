@@ -444,7 +444,7 @@ function arabicLang() {
   $("#home_tab").text(language.home_tab);
   $("#contact_tab").text(language.contact_tab);
   $("#model_button_7").text(language.model_button_7);
-  // $(".Contact ul").css({ "margin-left": "5rem" });
+  $(".Contact ul").css({ "margin-left": "5rem" });
   // $(".why .porta").css({ "margin-right": "2rem" });
   // $(".pricing .porta").css({ "margin-right": "2rem" });
   $(".pricing .porta .span").css({ "margin-right": "20%" });
@@ -458,6 +458,8 @@ function arabicLang() {
     "@media screen and (max-width:425px) { .pricing .porta { margin-right: 2rem }}";
   document.querySelector("style").textContent +=
     "@media screen and (max-width:425px) { .why .porta { margin-right: 2rem }}";
+  document.querySelector("style").textContent +=
+    "@media screen and (max-width:425px) { .Contact ul { margin-right: 0rem }}";
   $(".arbic").hide();
   $(".en").show();
 
