@@ -841,8 +841,10 @@ h4 {
 }
 
 .Contact form {
-  text-align: -webkit-center;
-  display: grid;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-self: center;
   color: #fff;
 }
 
