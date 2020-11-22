@@ -840,6 +840,12 @@ h4 {
   padding: 0.5%;
 }
 
+.styled-select select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+
 .Contact form {
   display: flex;
   flex-flow: column;

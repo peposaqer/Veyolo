@@ -288,7 +288,11 @@
 
     "model_input_32": "phone number",
 
-    "home_tab": "back"
+    "home_tab": "back",
+
+    "model_button_8": "Personal & company Info",
+
+    "model_button_9": "Subscription & Payment"
 
 
 }
