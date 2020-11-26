@@ -899,6 +899,25 @@ h4 {
   height: 100%;
 }
 
+.plus {
+  color: #FFF;
+  text-decoration: none;
+  margin-top: 1.98rem;
+  margin-bottom: 1rem;
+  margin-left: .3rem;
+  margin-right: .3rem;
+}
+
+.plus:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.viwe {
+  display: flex;
+  justify-content: center;
+}
+
 /* end Contact */
 
 /* start madia */
